@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import CostEditor from '@/components/cms/CostEditor.vue';
+import DynamicStringList from '@/components/cms/DynamicStringList.vue';
+import FeaturedEditor from '@/components/cms/FeaturedEditor.vue';
+import GalleryEditor from '@/components/cms/GalleryEditor.vue';
 import ImagePicker from '@/components/cms/ImagePicker.vue';
-import JsonEditor from '@/components/cms/JsonEditor.vue';
+import PricingFeaturesEditor from '@/components/cms/PricingFeaturesEditor.vue';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -100,11 +104,11 @@ const breadcrumbs = [
                                 <CardTitle>Características destacadas</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <FeaturedEditor
                                     v-model="form.featured"
                                     label=""
-                                    :rows="8"
-                                    placeholder='{ "title": "...", "items": ["..."] }'
+                                    title-placeholder="¿Por qué elegir este servicio?"
+                                    items-label="Beneficios / Características"
                                 />
                             </CardContent>
                         </Card>
@@ -114,11 +118,11 @@ const breadcrumbs = [
                                 <CardTitle>Requisitos</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <DynamicStringList
                                     v-model="form.requirements"
                                     label=""
-                                    :rows="6"
-                                    placeholder='["Requisito 1", "Requisito 2"]'
+                                    placeholder="Agregar requisito..."
+                                    add-button-text="Agregar requisito"
                                 />
                             </CardContent>
                         </Card>
@@ -128,11 +132,9 @@ const breadcrumbs = [
                                 <CardTitle>Costos</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <CostEditor
                                     v-model="form.cost"
                                     label=""
-                                    :rows="6"
-                                    placeholder='{ "hasCost": true, "amount": 0, "currency": "MXN", "description": "..." }'
                                 />
                             </CardContent>
                         </Card>
@@ -177,24 +179,26 @@ const breadcrumbs = [
                                 <CardTitle>Galería</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.gallery" label="" :rows="4" placeholder='["url1", "url2"]' />
+                                <GalleryEditor 
+                                    v-model="form.gallery" 
+                                    label="" 
+                                    :simple-mode="true"
+                                />
                             </CardContent>
                         </Card>
 
                         <Card v-if="form.show_in_pricing">
                             <CardHeader>
-                                <CardTitle>Precios</CardTitle>
+                                <CardTitle>Configuración de precios</CardTitle>
                             </CardHeader>
                             <CardContent class="space-y-4">
                                 <div class="space-y-2">
                                     <Label for="pricing_category">Categoría de precio</Label>
-                                    <Input id="pricing_category" v-model="form.pricing_category" />
+                                    <Input id="pricing_category" v-model="form.pricing_category" placeholder="Ej: Certificado" />
                                 </div>
-                                <JsonEditor
+                                <PricingFeaturesEditor
                                     v-model="form.pricing_features"
-                                    label="Características del precio"
-                                    :rows="6"
-                                    placeholder='[{ "text": "...", "active": true }]'
+                                    label=""
                                 />
                             </CardContent>
                         </Card>
@@ -213,4 +217,3 @@ const breadcrumbs = [
         </div>
     </AppLayout>
 </template>
-

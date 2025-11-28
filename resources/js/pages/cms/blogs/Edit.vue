@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import ContentEditor from '@/components/cms/ContentEditor.vue';
+import GalleryEditor from '@/components/cms/GalleryEditor.vue';
 import ImagePicker from '@/components/cms/ImagePicker.vue';
-import JsonEditor from '@/components/cms/JsonEditor.vue';
+import RelatedPostsEditor from '@/components/cms/RelatedPostsEditor.vue';
 import TagsInput from '@/components/cms/TagsInput.vue';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -144,14 +146,12 @@ const breadcrumbs = [
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>Contenido</CardTitle>
+                                <CardTitle>Contenido del artículo</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <ContentEditor
                                     v-model="form.content"
-                                    label="Contenido (JSON)"
-                                    :rows="12"
-                                    placeholder='[{ "type": "paragraph", "text": "..." }]'
+                                    label=""
                                 />
                             </CardContent>
                         </Card>
@@ -161,11 +161,9 @@ const breadcrumbs = [
                                 <CardTitle>Artículos relacionados</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <RelatedPostsEditor
                                     v-model="form.related_posts"
-                                    label="Posts relacionados (JSON)"
-                                    :rows="6"
-                                    placeholder='[{ "slug": "...", "title": "...", "image": "...", "date": "..." }]'
+                                    label=""
                                 />
                             </CardContent>
                         </Card>
@@ -227,11 +225,10 @@ const breadcrumbs = [
                                 <CardTitle>Galería</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <GalleryEditor
                                     v-model="form.gallery"
                                     label=""
-                                    :rows="4"
-                                    placeholder='["url1", "url2"]'
+                                    :simple-mode="true"
                                 />
                             </CardContent>
                         </Card>
@@ -254,4 +251,3 @@ const breadcrumbs = [
         </div>
     </AppLayout>
 </template>
-

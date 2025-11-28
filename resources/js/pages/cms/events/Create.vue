@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import DynamicStringList from '@/components/cms/DynamicStringList.vue';
 import ImagePicker from '@/components/cms/ImagePicker.vue';
-import JsonEditor from '@/components/cms/JsonEditor.vue';
+import InscriptionInfoEditor from '@/components/cms/InscriptionInfoEditor.vue';
+import LocationEditor from '@/components/cms/LocationEditor.vue';
 import TagsInput from '@/components/cms/TagsInput.vue';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -128,21 +130,25 @@ const breadcrumbs = [
                                 <CardTitle>Ubicación</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <LocationEditor
                                     v-model="form.location"
                                     label=""
-                                    :rows="6"
-                                    placeholder='{ "name": "...", "address": "...", "mapUrl": "..." }'
+                                    :show-name="true"
                                 />
                             </CardContent>
                         </Card>
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>Requisitos</CardTitle>
+                                <CardTitle>Requisitos de participación</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.requirements" label="" :rows="6" placeholder='["Requisito 1", "Requisito 2"]' />
+                                <DynamicStringList
+                                    v-model="form.requirements"
+                                    label=""
+                                    placeholder="Agregar requisito..."
+                                    add-button-text="Agregar requisito"
+                                />
                             </CardContent>
                         </Card>
 
@@ -151,11 +157,23 @@ const breadcrumbs = [
                                 <CardTitle>Información de inscripción</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
+                                <InscriptionInfoEditor
                                     v-model="form.inscription_info"
                                     label=""
-                                    :rows="8"
-                                    placeholder='{ "deadline": "...", "price": 0, "currency": "MXN", "contactEmail": "...", "contactPhone": "..." }'
+                                />
+                            </CardContent>
+                        </Card>
+
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Mitos a desmentir (opcional)</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <DynamicStringList
+                                    v-model="form.myths"
+                                    label=""
+                                    placeholder="Agregar mito..."
+                                    add-button-text="Agregar mito"
                                 />
                             </CardContent>
                         </Card>
@@ -198,19 +216,10 @@ const breadcrumbs = [
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>Razas</CardTitle>
+                                <CardTitle>Razas participantes</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <TagsInput v-model="form.breeds" label="" placeholder="Agregar raza..." />
-                            </CardContent>
-                        </Card>
-
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>Mitos</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <TagsInput v-model="form.myths" label="" placeholder="Agregar mito..." />
                             </CardContent>
                         </Card>
                     </div>
@@ -228,4 +237,3 @@ const breadcrumbs = [
         </div>
     </AppLayout>
 </template>
-

@@ -1,6 +1,16 @@
 <script setup lang="ts">
+import AboutEditor from '@/components/cms/AboutEditor.vue';
+import AwardsEditor from '@/components/cms/AwardsEditor.vue';
+import CareEditor from '@/components/cms/CareEditor.vue';
+import CertificationsEditor from '@/components/cms/CertificationsEditor.vue';
+import FeaturesEditor from '@/components/cms/FeaturesEditor.vue';
+import GalleryEditor from '@/components/cms/GalleryEditor.vue';
 import ImagePicker from '@/components/cms/ImagePicker.vue';
-import JsonEditor from '@/components/cms/JsonEditor.vue';
+import LocationEditor from '@/components/cms/LocationEditor.vue';
+import ResponsibleEditor from '@/components/cms/ResponsibleEditor.vue';
+import ReviewsEditor from '@/components/cms/ReviewsEditor.vue';
+import SiresEditor from '@/components/cms/SiresEditor.vue';
+import SocialLinksEditor from '@/components/cms/SocialLinksEditor.vue';
 import TagsInput from '@/components/cms/TagsInput.vue';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -90,7 +100,7 @@ const breadcrumbs = [
                                     <Textarea id="description" v-model="form.description" :rows="4" />
                                 </div>
 
-                                <TagsInput v-model="form.breeds" label="Razas" placeholder="Agregar raza..." />
+                                <TagsInput v-model="form.breeds" label="Razas que cría" placeholder="Agregar raza..." />
                             </CardContent>
                         </Card>
 
@@ -127,40 +137,25 @@ const breadcrumbs = [
                                 <CardTitle>Ubicación</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="form.location"
-                                    label=""
-                                    :rows="6"
-                                    placeholder='{ "city": "...", "state": "...", "country": "...", "fullAddress": "..." }'
-                                />
+                                <LocationEditor v-model="form.location" label="" />
                             </CardContent>
                         </Card>
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>Acerca de</CardTitle>
+                                <CardTitle>Acerca del criadero</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="form.about"
-                                    label=""
-                                    :rows="8"
-                                    placeholder='{ "title": "...", "content": ["..."] }'
-                                />
+                                <AboutEditor v-model="form.about" label="" />
                             </CardContent>
                         </Card>
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>Responsable</CardTitle>
+                                <CardTitle>Responsable del criadero</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="form.responsible"
-                                    label=""
-                                    :rows="6"
-                                    placeholder='{ "name": "...", "registration": "...", "certification": "...", "bio": "..." }'
-                                />
+                                <ResponsibleEditor v-model="form.responsible" label="" />
                             </CardContent>
                         </Card>
 
@@ -169,7 +164,7 @@ const breadcrumbs = [
                                 <CardTitle>Certificaciones</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.certifications" label="" :rows="8" />
+                                <CertificationsEditor v-model="form.certifications" label="" />
                             </CardContent>
                         </Card>
 
@@ -178,7 +173,7 @@ const breadcrumbs = [
                                 <CardTitle>Características</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.features" label="" :rows="8" />
+                                <FeaturesEditor v-model="form.features" label="" />
                             </CardContent>
                         </Card>
 
@@ -187,7 +182,7 @@ const breadcrumbs = [
                                 <CardTitle>Sementales</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.sires" label="" :rows="8" />
+                                <SiresEditor v-model="form.sires" label="" />
                             </CardContent>
                         </Card>
 
@@ -196,16 +191,16 @@ const breadcrumbs = [
                                 <CardTitle>Cuidados</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.care" label="" :rows="8" />
+                                <CareEditor v-model="form.care" label="" />
                             </CardContent>
                         </Card>
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>Premios</CardTitle>
+                                <CardTitle>Premios y reconocimientos</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.awards" label="" :rows="6" />
+                                <AwardsEditor v-model="form.awards" label="" />
                             </CardContent>
                         </Card>
 
@@ -214,7 +209,7 @@ const breadcrumbs = [
                                 <CardTitle>Galería</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.gallery" label="" :rows="6" />
+                                <GalleryEditor v-model="form.gallery" label="" />
                             </CardContent>
                         </Card>
 
@@ -223,7 +218,7 @@ const breadcrumbs = [
                                 <CardTitle>Reseñas</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.reviews" label="" :rows="6" />
+                                <ReviewsEditor v-model="form.reviews" label="" />
                             </CardContent>
                         </Card>
                     </div>
@@ -288,7 +283,7 @@ const breadcrumbs = [
                                 <CardTitle>Redes sociales</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor v-model="form.social_links" label="" :rows="6" />
+                                <SocialLinksEditor v-model="form.social_links" label="" />
                             </CardContent>
                         </Card>
                     </div>
@@ -306,4 +301,3 @@ const breadcrumbs = [
         </div>
     </AppLayout>
 </template>
-

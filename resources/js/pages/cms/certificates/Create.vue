@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import DynamicStringList from '@/components/cms/DynamicStringList.vue';
 import ImagePicker from '@/components/cms/ImagePicker.vue';
-import JsonEditor from '@/components/cms/JsonEditor.vue';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -194,7 +194,12 @@ const breadcrumbs = [
                                 <CardTitle>Títulos y observaciones</CardTitle>
                             </CardHeader>
                             <CardContent class="space-y-4">
-                                <JsonEditor v-model="form.titles" label="Títulos" :rows="4" placeholder='["Título 1", "Título 2"]' />
+                                <DynamicStringList
+                                    v-model="form.titles"
+                                    label="Títulos obtenidos"
+                                    placeholder="Agregar título..."
+                                    add-button-text="Agregar título"
+                                />
 
                                 <div class="space-y-2">
                                     <Label for="observations">Observaciones</Label>
@@ -257,4 +262,3 @@ const breadcrumbs = [
         </div>
     </AppLayout>
 </template>
-
