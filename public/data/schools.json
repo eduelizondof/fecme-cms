@@ -1,0 +1,472 @@
+{
+  "schools": [
+    {
+      "slug": "escuela-canina-guadalajara",
+      "name": "Escuela Canina Guadalajara",
+      "logo": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&q=80",
+      "featureImage": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=1200&q=80",
+      "programsList": ["Adiestramiento Básico", "Agility", "Obediencia", "Terapia Asistida"],
+      "location": {
+        "city": "Guadalajara",
+        "state": "Jalisco",
+        "country": "México",
+        "fullAddress": "Guadalajara, Jalisco, México",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3836847970845!2d-103.3492606845673!3d20.65973748620158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+      },
+      "memberSince": "2019",
+      "rating": 4.9,
+      "totalReviews": 45,
+      "description": "Escuela canina especializada en adiestramiento y educación canina con más de 15 años de experiencia. Ofrecemos programas completos para perros de todas las edades y razas.",
+      "shortDescription": "Escuela canina líder en adiestramiento y educación con reconocimiento nacional.",
+      "website": "https://escuelacaninaguadalajara.mx/",
+      "email": "contacto@escuelacaninaguadalajara.mx",
+      "phone": "+52 33 2267-2400",
+      "whatsapp": "+52 33 2267-2400",
+      "socialLinks": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/escuelacaninaguadalajara",
+          "icon": "fa fa-facebook"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/escuelacaninaguadalajara",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "platform": "twitter",
+          "url": "https://www.twitter.com/escuelacaninaguadalajara",
+          "icon": "fa fa-twitter"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certificación FECMEgt",
+          "status": "Certificada",
+          "date": "2019",
+          "icon": "icon-certificate"
+        },
+        {
+          "name": "Centro de Adiestramiento Certificado",
+          "status": "Certificada",
+          "date": "2020",
+          "icon": "icon-star"
+        },
+        {
+          "name": "Reconocimiento FECAM",
+          "status": "Reconocida",
+          "date": "2021",
+          "icon": "icon-check"
+        }
+      ],
+      "features": [
+        {
+          "title": "Instructores Certificados",
+          "description": "Equipo de instructores certificados internacionalmente con años de experiencia en adiestramiento canino.",
+          "icon": "icon-check"
+        },
+        {
+          "title": "Instalaciones Modernas",
+          "description": "Instalaciones equipadas con las mejores condiciones para el aprendizaje y desarrollo de los perros.",
+          "icon": "icon-book"
+        },
+        {
+          "title": "Programas Personalizados",
+          "description": "Programas adaptados a las necesidades específicas de cada perro y dueño.",
+          "icon": "icon-heart"
+        },
+        {
+          "title": "Seguimiento Continuo",
+          "description": "Sistema de seguimiento y apoyo continuo para garantizar el éxito del entrenamiento.",
+          "icon": "icon-trace"
+        }
+      ],
+      "responsible": {
+        "name": "Lic. Patricia López",
+        "registration": "INSTR-2019-001",
+        "certification": "Instructora Certificada desde 2019",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+        "bio": "Instructora certificada con más de 15 años de experiencia en adiestramiento canino y terapia asistida. Especialista en comportamiento canino y educación positiva."
+      },
+      "about": {
+        "title": "Acerca de Escuela Canina Guadalajara",
+        "content": [
+          "Escuela Canina Guadalajara es una institución líder en adiestramiento y educación canina en México. Fundada en 2019, nos hemos dedicado a proporcionar servicios de alta calidad para mejorar la relación entre perros y sus familias.",
+          "Nuestro enfoque se basa en métodos de educación positiva, respetando las necesidades naturales de cada perro y promoviendo un aprendizaje basado en la confianza y el respeto mutuo.",
+          "Contamos con instalaciones modernas y un equipo de instructores altamente capacitados, certificados a nivel nacional e internacional. Ofrecemos programas desde adiestramiento básico hasta especializaciones avanzadas como Agility, Obediencia y Terapia Asistida."
+        ]
+      },
+      "programs": [
+        {
+          "name": "Adiestramiento Básico",
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=600&q=80",
+          "description": "Programa completo de adiestramiento básico para cachorros y perros adultos",
+          "duration": "8 semanas",
+          "price": 2500
+        },
+        {
+          "name": "Agility",
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=600&q=80",
+          "description": "Entrenamiento especializado en Agility para competencias",
+          "duration": "12 semanas",
+          "price": 3000
+        },
+        {
+          "name": "Obediencia",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=600&q=80",
+          "description": "Programa avanzado de obediencia canina",
+          "duration": "10 semanas",
+          "price": 2800
+        }
+      ],
+      "facilities": {
+        "title": "Nuestras Instalaciones",
+        "sections": [
+          {
+            "title": "Canchas de Entrenamiento",
+            "description": "Canchas espaciosas y seguras para el entrenamiento de diferentes disciplinas.",
+            "icon": "icon-training"
+          },
+          {
+            "title": "Áreas de Socialización",
+            "description": "Espacios controlados para la socialización segura de los perros.",
+            "icon": "icon-social"
+          },
+          {
+            "title": "Clínicas Veterinarias",
+            "description": "Servicios veterinarios en el mismo lugar para la salud integral de los perros.",
+            "icon": "icon-health"
+          },
+          {
+            "title": "Estacionamiento",
+            "description": "Estacionamiento amplio y seguro para la comodidad de nuestros clientes.",
+            "icon": "icon-parking"
+          }
+        ]
+      },
+      "awards": [
+        {
+          "title": "Mejor Escuela Canina del Año 2023",
+          "organization": "FECMEgt",
+          "year": "2023",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=400&q=80"
+        },
+        {
+          "title": "Reconocimiento a la Excelencia",
+          "organization": "FECAM",
+          "year": "2022",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=400&q=80"
+        }
+      ],
+      "gallery": [
+        {
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+          "title": "Cancha de Agility",
+          "description": "Nuestras instalaciones de Agility"
+        },
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+          "title": "Entrenamiento Básico",
+          "description": "Sesiones de adiestramiento básico"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+          "title": "Instalaciones",
+          "description": "Vista general de nuestras instalaciones"
+        },
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+          "title": "Obediencia",
+          "description": "Clases de obediencia avanzada"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+          "title": "Socialización",
+          "description": "Área de socialización"
+        },
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+          "title": "Terapia Asistida",
+          "description": "Programa de terapia asistida"
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Carlos Mendoza",
+          "rating": 5,
+          "comment": "Excelente escuela, los instructores son muy profesionales y mi perro ha mejorado mucho. Altamente recomendada.",
+          "date": "2024-01-15"
+        },
+        {
+          "author": "Ana Martínez",
+          "rating": 5,
+          "comment": "Las instalaciones son excelentes y el programa de adiestramiento es muy completo. Muy satisfecha con los resultados.",
+          "date": "2024-02-20"
+        },
+        {
+          "author": "Roberto Sánchez",
+          "rating": 5,
+          "comment": "La mejor escuela canina de la ciudad. Profesionalismo y dedicación en cada sesión.",
+          "date": "2024-03-10"
+        }
+      ]
+    },
+    {
+      "slug": "centro-adiestramiento-cdmx",
+      "name": "Centro de Adiestramiento CDMX",
+      "logo": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&q=80",
+      "featureImage": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=1200&q=80",
+      "programs": ["Adiestramiento Básico", "Obediencia", "Protección"],
+      "location": {
+        "city": "Ciudad de México",
+        "state": "CDMX",
+        "country": "México",
+        "fullAddress": "Ciudad de México, CDMX, México"
+      },
+      "memberSince": "2020",
+      "rating": 4.7,
+      "totalReviews": 32,
+      "description": "Centro especializado en adiestramiento canino con programas para perros de trabajo y compañía.",
+      "shortDescription": "Centro de adiestramiento canino con programas especializados.",
+      "website": "#",
+      "email": "contacto@centrocdmx.mx",
+      "phone": "+52 55 1234-5678",
+      "whatsapp": "+52 55 1234-5678",
+      "socialLinks": [
+        {
+          "platform": "facebook",
+          "url": "#",
+          "icon": "fa fa-facebook"
+        },
+        {
+          "platform": "instagram",
+          "url": "#",
+          "icon": "fa fa-instagram"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certificación FECMEgt",
+          "status": "Certificada",
+          "date": "2020",
+          "icon": "icon-certificate"
+        }
+      ],
+      "features": [
+        {
+          "title": "Instructores Certificados",
+          "description": "Equipo profesional de instructores certificados.",
+          "icon": "icon-check"
+        }
+      ],
+      "responsible": {
+        "name": "Ing. Carlos Mendoza",
+        "registration": "INSTR-2020-015",
+        "certification": "Instructor Certificado desde 2020",
+        "bio": "Instructor certificado especializado en adiestramiento de perros de trabajo."
+      },
+      "about": {
+        "title": "Acerca de Centro de Adiestramiento CDMX",
+        "content": [
+          "Centro de Adiestramiento CDMX es un centro especializado en adiestramiento canino con programas para diferentes necesidades."
+        ]
+      },
+      "programs": [
+        {
+          "name": "Adiestramiento Básico",
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=600&q=80",
+          "description": "Programa básico de adiestramiento",
+          "duration": "8 semanas",
+          "price": 2000
+        }
+      ],
+      "facilities": {
+        "title": "Nuestras Instalaciones",
+        "sections": [
+          {
+            "title": "Canchas de Entrenamiento",
+            "description": "Canchas para entrenamiento.",
+            "icon": "icon-training"
+          }
+        ]
+      },
+      "awards": [],
+      "gallery": [
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+          "title": "Instalaciones",
+          "description": "Vista general"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "slug": "escuela-agility-monterrey",
+      "name": "Escuela de Agility Monterrey",
+      "logo": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400&q=80",
+      "featureImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80",
+      "programsList": ["Agility", "Adiestramiento Básico"],
+      "location": {
+        "city": "Monterrey",
+        "state": "Nuevo León",
+        "country": "México",
+        "fullAddress": "Monterrey, Nuevo León, México"
+      },
+      "memberSince": "2021",
+      "rating": 4.8,
+      "totalReviews": 28,
+      "description": "Escuela especializada en Agility con canchas profesionales y competencias regulares.",
+      "shortDescription": "Escuela especializada en Agility con reconocimiento nacional.",
+      "website": "#",
+      "email": "contacto@agilitymonterrey.mx",
+      "phone": "+52 81 1234-5678",
+      "whatsapp": "+52 81 1234-5678",
+      "socialLinks": [
+        {
+          "platform": "instagram",
+          "url": "#",
+          "icon": "fa fa-instagram"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certificación FECMEgt",
+          "status": "Certificada",
+          "date": "2021",
+          "icon": "icon-certificate"
+        }
+      ],
+      "features": [
+        {
+          "title": "Canchas Profesionales",
+          "description": "Canchas de Agility de nivel competitivo.",
+          "icon": "icon-check"
+        }
+      ],
+      "responsible": {
+        "name": "Lic. Laura Ramírez",
+        "registration": "INSTR-2021-028",
+        "certification": "Instructora Certificada desde 2021",
+        "bio": "Instructora especializada en Agility con experiencia en competencias internacionales."
+      },
+      "about": {
+        "title": "Acerca de Escuela de Agility Monterrey",
+        "content": [
+          "Escuela de Agility Monterrey se dedica exclusivamente al entrenamiento y preparación de perros para competencias de Agility."
+        ]
+      },
+      "programs": [
+        {
+          "name": "Agility",
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=600&q=80",
+          "description": "Programa completo de Agility",
+          "duration": "12 semanas",
+          "price": 3500
+        }
+      ],
+      "facilities": {
+        "title": "Nuestras Instalaciones",
+        "sections": [
+          {
+            "title": "Canchas de Agility",
+            "description": "Canchas profesionales de Agility.",
+            "icon": "icon-training"
+          }
+        ]
+      },
+      "awards": [],
+      "gallery": [
+        {
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+          "title": "Cancha de Agility",
+          "description": "Instalaciones"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "slug": "escuela-obediencia-puebla",
+      "name": "Escuela de Obediencia Puebla",
+      "logo": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&q=80",
+      "featureImage": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=1200&q=80",
+      "programsList": ["Obediencia", "Adiestramiento Básico", "Terapia Asistida"],
+      "location": {
+        "city": "Puebla",
+        "state": "Puebla",
+        "country": "México",
+        "fullAddress": "Puebla, Puebla, México"
+      },
+      "memberSince": "2022",
+      "rating": 4.6,
+      "totalReviews": 22,
+      "description": "Escuela especializada en obediencia canina y terapia asistida.",
+      "shortDescription": "Escuela de obediencia con programas de terapia asistida.",
+      "website": "#",
+      "email": "contacto@obedienciapuebla.mx",
+      "phone": "+52 222 1234-5678",
+      "whatsapp": "+52 222 1234-5678",
+      "socialLinks": [
+        {
+          "platform": "facebook",
+          "url": "#",
+          "icon": "fa fa-facebook"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certificación FECMEgt",
+          "status": "Certificada",
+          "date": "2022",
+          "icon": "icon-certificate"
+        }
+      ],
+      "features": [
+        {
+          "title": "Especialistas en Obediencia",
+          "description": "Instructores especializados en obediencia avanzada.",
+          "icon": "icon-check"
+        }
+      ],
+      "responsible": {
+        "name": "Dr. Fernando Torres",
+        "registration": "INSTR-2022-042",
+        "certification": "Instructor Certificado desde 2022",
+        "bio": "Instructor certificado especializado en obediencia canina y terapia asistida."
+      },
+      "about": {
+        "title": "Acerca de Escuela de Obediencia Puebla",
+        "content": [
+          "Escuela de Obediencia Puebla ofrece programas especializados en obediencia canina y terapia asistida."
+        ]
+      },
+      "programs": [
+        {
+          "name": "Obediencia",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=600&q=80",
+          "description": "Programa de obediencia avanzada",
+          "duration": "10 semanas",
+          "price": 2800
+        }
+      ],
+      "facilities": {
+        "title": "Nuestras Instalaciones",
+        "sections": [
+          {
+            "title": "Áreas de Entrenamiento",
+            "description": "Espacios para entrenamiento de obediencia.",
+            "icon": "icon-training"
+          }
+        ]
+      },
+      "awards": [],
+      "gallery": [
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+          "title": "Entrenamiento",
+          "description": "Sesiones de obediencia"
+        }
+      ],
+      "reviews": []
+    }
+  ]
+}

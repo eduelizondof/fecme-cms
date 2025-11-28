@@ -1,0 +1,428 @@
+{
+  "breeders": [
+    {
+      "slug": "gr-royal-chow-chow",
+      "name": "GR Royal Chow Chow",
+      "logo": "/criaderos-img/chowking/logo.png",
+      "featureImage": "/criaderos-img/chowking/feature-image.png",
+      "breeds": ["Chow Chow"],
+      "location": {
+        "city": "Guadalajara",
+        "state": "Jalisco",
+        "country": "México",
+        "fullAddress": "Guadalajara, Jalisco, México",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3836847970845!2d-103.3492606845673!3d20.65973748620158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+      },
+      "memberSince": "2020",
+      "rating": 4.8,
+      "totalReviews": 24,
+      "description": "GR Royal Chow Chow es un criadero especializado en la crianza de Chow Chows de alta calidad, comprometido con la excelencia genética, el bienestar animal y el cumplimiento de los más altos estándares internacionales.",
+      "shortDescription": "Criadero especializado en Chow Chows de alta calidad con reconocimiento internacional.",
+      "website": "https://grroyalchowchow.mx/",
+      "email": "contacto@grroyalchowchow.mx",
+      "phone": "+52 33 1234 5678",
+      "whatsapp": "+52 33 1234 5678",
+      "socialLinks": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/grroyalchowchow",
+          "icon": "fa fa-facebook"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/grroyalchowchow",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "platform": "twitter",
+          "url": "https://www.twitter.com/grroyalchowchow",
+          "icon": "fa fa-twitter"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "CPRI - Certificación de Criadero",
+          "status": "Certificado",
+          "date": "2020",
+          "icon": "icon-certificate"
+        },
+        {
+          "name": "Certificación de Bienestar Animal",
+          "status": "Certificado",
+          "date": "2021",
+          "icon": "icon-heart"
+        },
+        {
+          "name": "Reconocimiento FECAM",
+          "status": "Reconocido",
+          "date": "2022",
+          "icon": "icon-star"
+        }
+      ],
+      "features": [
+        {
+          "title": "Cumplimiento de Normas Internacionales",
+          "description": "Criadero certificado que cumple con todas las normativas internacionales de bienestar animal y crianza responsable.",
+          "icon": "icon-check"
+        },
+        {
+          "title": "Programa de Salud Genética",
+          "description": "Implementación de programas de salud genética y pruebas de ADN para garantizar la calidad de los ejemplares.",
+          "icon": "icon-trace"
+        },
+        {
+          "title": "Educación Continua",
+          "description": "Participación activa en cursos y programas de formación continua para mantener los más altos estándares.",
+          "icon": "icon-book"
+        }
+      ],
+      "responsible": {
+        "name": "Lic. Miguel",
+        "registration": "CPRG-2020-001",
+        "certification": "Criador Certificado desde 2020",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+        "bio": "Criadora certificada con más de 10 años de experiencia en la crianza de Chow Chows. Comprometida con la excelencia y el bienestar animal."
+      },
+      "about": {
+        "title": "Acerca de GR Royal Chow Chow",
+        "content": [
+          "GR Royal Chow Chow nació de la pasión por preservar y mejorar la raza Chow Chow, una de las razas más antiguas y nobles del mundo canino. Nuestro criadero se estableció con el objetivo de criar ejemplares que no solo cumplan con los estándares de la raza, sino que también sean saludables, equilibrados y representen lo mejor de la genética Chow Chow.",
+          "Con más de 5 años de experiencia, hemos logrado establecer un programa de crianza que combina la tradición con la ciencia moderna. Todos nuestros ejemplares son criados en un ambiente familiar, recibiendo atención personalizada desde su nacimiento.",
+          "Nuestro compromiso es con la excelencia, la transparencia y el bienestar animal. Cada perro que sale de nuestro criadero es el resultado de años de dedicación, cuidado y amor por la raza."
+        ]
+      },
+      "sires": [
+        {
+          "name": "Royal Champion Maximus",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=600&q=80",
+          "pedigree": "FECME-2020-001",
+          "achievements": ["Campeón Nacional 2022", "Mejor de Raza 2023"]
+        },
+        {
+          "name": "Imperial Prince Alexander",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=600&q=80",
+          "pedigree": "FECME-2021-045",
+          "achievements": ["Campeón Internacional 2023"]
+        }
+      ],
+      "care": {
+        "title": "Nuestros Cuidados",
+        "sections": [
+          {
+            "title": "Alimentación",
+            "description": "Proporcionamos una dieta balanceada y de alta calidad, adaptada a las necesidades específicas de cada etapa de vida de nuestros Chow Chows.",
+            "icon": "icon-food"
+          },
+          {
+            "title": "Salud Preventiva",
+            "description": "Programa completo de vacunación, desparasitación y chequeos veterinarios regulares para garantizar la salud de todos nuestros ejemplares.",
+            "icon": "icon-health"
+          },
+          {
+            "title": "Socialización",
+            "description": "Desde temprana edad, nuestros cachorros son expuestos a diferentes estímulos y situaciones para desarrollar un carácter equilibrado y confiado.",
+            "icon": "icon-social"
+          },
+          {
+            "title": "Ambiente Familiar",
+            "description": "Todos nuestros perros viven en un ambiente familiar, recibiendo atención personalizada y cariño constante.",
+            "icon": "icon-home"
+          }
+        ]
+      },
+      "awards": [
+        {
+          "title": "Mejor Criadero del Año 2023",
+          "organization": "FECMEgt",
+          "year": "2023",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=400&q=80"
+        },
+        {
+          "title": "Reconocimiento a la Excelencia",
+          "organization": "FECAM",
+          "year": "2022",
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=400&q=80"
+        }
+      ],
+      "gallery": [
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+          "title": "Chow Chow Adulto",
+          "description": "Ejemplar adulto en plenitud"
+        },
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+          "title": "Cachorros",
+          "description": "Nuestra última camada"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+          "title": "Instalaciones",
+          "description": "Área de crianza"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+          "title": "Exposición",
+          "description": "Participación en eventos"
+        },
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+          "title": "Semental",
+          "description": "Royal Champion Maximus"
+        },
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+          "title": "Familia",
+          "description": "Nuestros ejemplares en familia"
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Carlos Mendoza",
+          "rating": 5,
+          "comment": "Excelente criadero, muy profesional y comprometido con la calidad. Nuestro Chow Chow es perfecto.",
+          "date": "2024-01-15"
+        },
+        {
+          "author": "Ana Martínez",
+          "rating": 5,
+          "comment": "La atención y el cuidado que recibió nuestro cachorro fue excepcional. Altamente recomendado.",
+          "date": "2024-02-20"
+        }
+      ]
+    },
+    {
+      "slug": "golden-stars-kennel",
+      "name": "Golden Stars Kennel",
+      "logo": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=400&q=80",
+      "featureImage": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=1200&q=80",
+      "breeds": ["Golden Retriever"],
+      "location": {
+        "city": "Ciudad de México",
+        "state": "CDMX",
+        "country": "México",
+        "fullAddress": "Ciudad de México, CDMX, México"
+      },
+      "memberSince": "2021",
+      "rating": 4.6,
+      "totalReviews": 18,
+      "description": "Criadero especializado en Golden Retrievers con más de 8 años de experiencia.",
+      "shortDescription": "Criadero de Golden Retrievers con reconocimiento nacional.",
+      "website": "#",
+      "email": "contacto@goldenstars.mx",
+      "phone": "+52 55 1234 5678",
+      "whatsapp": "+52 55 1234 5678",
+      "socialLinks": [
+        {
+          "platform": "facebook",
+          "url": "#",
+          "icon": "fa fa-facebook"
+        },
+        {
+          "platform": "instagram",
+          "url": "#",
+          "icon": "fa fa-instagram"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "CPRI - Certificación de Criadero",
+          "status": "Certificado",
+          "date": "2021",
+          "icon": "icon-certificate"
+        }
+      ],
+      "features": [
+        {
+          "title": "Cumplimiento de Normas",
+          "description": "Criadero certificado que cumple con normativas de bienestar animal.",
+          "icon": "icon-check"
+        }
+      ],
+      "responsible": {
+        "name": "Dr. Roberto Sánchez",
+        "registration": "CPRG-2021-012",
+        "certification": "Criador Certificado desde 2021",
+        "bio": "Veterinario y criador certificado con amplia experiencia."
+      },
+      "about": {
+        "title": "Acerca de Golden Stars Kennel",
+        "content": [
+          "Golden Stars Kennel es un criadero comprometido con la crianza responsable de Golden Retrievers."
+        ]
+      },
+      "sires": [],
+      "care": {
+        "title": "Nuestros Cuidados",
+        "sections": [
+          {
+            "title": "Alimentación",
+            "description": "Dieta balanceada y de alta calidad.",
+            "icon": "icon-food"
+          }
+        ]
+      },
+      "awards": [],
+      "gallery": [
+        {
+          "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+          "title": "Golden Retriever",
+          "description": "Ejemplar adulto"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "slug": "labrador-elite-mexico",
+      "name": "Labrador Elite México",
+      "logo": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&q=80",
+      "featureImage": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=1200&q=80",
+      "breeds": ["Labrador Retriever"],
+      "location": {
+        "city": "Monterrey",
+        "state": "Nuevo León",
+        "country": "México",
+        "fullAddress": "Monterrey, Nuevo León, México"
+      },
+      "memberSince": "2022",
+      "rating": 4.7,
+      "totalReviews": 15,
+      "description": "Criadero especializado en Labrador Retrievers de línea de trabajo y compañía.",
+      "shortDescription": "Criadero de Labrador Retrievers con excelencia comprobada.",
+      "website": "#",
+      "email": "contacto@labradorelite.mx",
+      "phone": "+52 81 1234 5678",
+      "whatsapp": "+52 81 1234 5678",
+      "socialLinks": [
+        {
+          "platform": "facebook",
+          "url": "#",
+          "icon": "fa fa-facebook"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "CPRI - Certificación de Criadero",
+          "status": "Certificado",
+          "date": "2022",
+          "icon": "icon-certificate"
+        }
+      ],
+      "features": [
+        {
+          "title": "Cumplimiento de Normas",
+          "description": "Criadero certificado.",
+          "icon": "icon-check"
+        }
+      ],
+      "responsible": {
+        "name": "Ing. Laura Ramírez",
+        "registration": "CPRG-2022-028",
+        "certification": "Criadora Certificada desde 2022",
+        "bio": "Criadora certificada especializada en Labrador Retrievers."
+      },
+      "about": {
+        "title": "Acerca de Labrador Elite México",
+        "content": [
+          "Labrador Elite México se dedica a la crianza de Labrador Retrievers de alta calidad."
+        ]
+      },
+      "sires": [],
+      "care": {
+        "title": "Nuestros Cuidados",
+        "sections": [
+          {
+            "title": "Alimentación",
+            "description": "Dieta balanceada.",
+            "icon": "icon-food"
+          }
+        ]
+      },
+      "awards": [],
+      "gallery": [
+        {
+          "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+          "title": "Labrador Retriever",
+          "description": "Ejemplar"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "slug": "husky-premium-breeding",
+      "name": "Husky Premium Breeding",
+      "logo": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400&q=80",
+      "featureImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80",
+      "breeds": ["Siberian Husky"],
+      "location": {
+        "city": "Puebla",
+        "state": "Puebla",
+        "country": "México",
+        "fullAddress": "Puebla, Puebla, México"
+      },
+      "memberSince": "2023",
+      "rating": 4.5,
+      "totalReviews": 10,
+      "description": "Criadero especializado en Siberian Huskies con enfoque en salud y temperamento.",
+      "shortDescription": "Criadero de Siberian Huskies comprometido con la calidad.",
+      "website": "#",
+      "email": "contacto@huskypremium.mx",
+      "phone": "+52 222 1234 5678",
+      "whatsapp": "+52 222 1234 5678",
+      "socialLinks": [
+        {
+          "platform": "instagram",
+          "url": "#",
+          "icon": "fa fa-instagram"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "CPRI - Certificación de Criadero",
+          "status": "Certificado",
+          "date": "2023",
+          "icon": "icon-certificate"
+        }
+      ],
+      "features": [
+        {
+          "title": "Cumplimiento de Normas",
+          "description": "Criadero certificado.",
+          "icon": "icon-check"
+        }
+      ],
+      "responsible": {
+        "name": "Lic. Fernando Torres",
+        "registration": "CPRG-2023-045",
+        "certification": "Criador Certificado desde 2023",
+        "bio": "Criador certificado especializado en Siberian Huskies."
+      },
+      "about": {
+        "title": "Acerca de Husky Premium Breeding",
+        "content": [
+          "Husky Premium Breeding se dedica a la crianza responsable de Siberian Huskies."
+        ]
+      },
+      "sires": [],
+      "care": {
+        "title": "Nuestros Cuidados",
+        "sections": [
+          {
+            "title": "Alimentación",
+            "description": "Dieta balanceada.",
+            "icon": "icon-food"
+          }
+        ]
+      },
+      "awards": [],
+      "gallery": [
+        {
+          "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+          "title": "Siberian Husky",
+          "description": "Ejemplar"
+        }
+      ],
+      "reviews": []
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "events": [
+    {
+      "slug": "expo-chow-chow-2025",
+      "title": "Exposición Especializada de Chow Chow 2025",
+      "type": "Especializada",
+      "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=1200&q=80",
+      "startDate": "2025-11-15",
+      "endDate": "2025-11-16",
+      "startTime": "09:00",
+      "endTime": "18:00",
+      "location": {
+        "name": "Campo FECMEgt",
+        "address": "Guadalajara, Jalisco, México",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3836847970845!2d-103.3492606845673!3d20.65973748620158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+      },
+      "organizer": "Club Canófilo de Guadalajara, A.C.",
+      "judges": ["Dr. Roberto Sánchez", "Lic. María González", "Ing. Carlos Mendoza"],
+      "breeds": ["Chow Chow"],
+      "description": "Exposición especializada dedicada exclusivamente a la raza Chow Chow. Evento de dos días con competencias, evaluaciones y premiaciones.",
+      "details": "Esta exposición especializada reúne a los mejores ejemplares de Chow Chow del país. Durante dos días, jueces internacionales evaluarán los estándares de la raza, otorgando reconocimientos a los mejores ejemplares en diferentes categorías.",
+      "requirements": [
+        "Pedigree válido y actualizado",
+        "Certificado de vacunación vigente",
+        "Registro previo en línea o en el evento",
+        "Documentación del propietario",
+        "Costo de inscripción: $800 MXN"
+      ],
+      "inscriptionInfo": {
+        "deadline": "2025-03-10",
+        "price": 800,
+        "currency": "MXN",
+        "onlineUrl": "#",
+        "contactEmail": "inscripciones@fecmemx.com",
+        "contactPhone": "+52 33 2267-2400"
+      },
+      "myths": [
+        "Los Chow Chow son agresivos por naturaleza",
+        "No requieren ejercicio regular",
+        "Son difíciles de entrenar"
+      ]
+    },
+    {
+      "slug": "expo-todas-razas-marzo",
+      "title": "Exposición Internacional Todas las Razas - Marzo 2025",
+      "type": "Todas las Razas",
+      "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=1200&q=80",
+      "startDate": "2025-11-22",
+      "endDate": "2025-11-23",
+      "startTime": "08:00",
+      "endTime": "19:00",
+      "location": {
+        "name": "Centro de Convenciones CDMX",
+        "address": "Ciudad de México, CDMX, México",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9884809467!2d-99.13320468454789!3d19.432607986899568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sCentro%20de%20Convenciones%20CDMX!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+      },
+      "organizer": "Federación Canina de México gt. A.C.",
+      "judges": [
+        "Dr. Ana Martínez",
+        "Lic. Fernando Torres",
+        "Ing. Laura Ramírez",
+        "Dr. Roberto Sánchez"
+      ],
+      "breeds": ["Todas las Razas"],
+      "description": "La exposición más importante del año con todas las razas reconocidas. Evento internacional con jueces certificados.",
+      "details": "Este evento reúne a criadores y ejemplares de todas las razas reconocidas. Durante dos días, se llevarán a cabo evaluaciones, competencias y premiaciones en múltiples rings simultáneamente.",
+      "requirements": [
+        "Pedigree oficial válido",
+        "Certificado de vacunación vigente",
+        "Inscripción previa obligatoria",
+        "Documentación completa del ejemplar",
+        "Costo de inscripción: $1,200 MXN"
+      ],
+      "inscriptionInfo": {
+        "deadline": "2025-03-15",
+        "price": 1200,
+        "currency": "MXN",
+        "onlineUrl": "#",
+        "contactEmail": "inscripciones@fecmemx.com",
+        "contactPhone": "+52 33 2267-2400"
+      },
+      "myths": []
+    },
+    {
+      "slug": "campeonato-agility-2025",
+      "title": "Campeonato Nacional de Agility 2025",
+      "type": "Deportes",
+      "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=1200&q=80",
+      "startDate": "2025-11-10",
+      "endDate": "2025-11-12",
+      "startTime": "07:00",
+      "endTime": "20:00",
+      "location": {
+        "name": "Campo Agility Toluca",
+        "address": "Toluca, Estado de México, México",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1234567890!2d-99.654321!3d19.292345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1c1234567890%3A0xabcdef1234567890!2sCampo%20Agility%20Toluca!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+      },
+      "organizer": "Club de Agility de Toluca, A.C.",
+      "judges": ["Lic. Patricia López", "Dr. Juan García"],
+      "breeds": ["Todas las Razas"],
+      "description": "Campeonato nacional de agility con las mejores competencias de velocidad y precisión.",
+      "details": "Tres días de intensa competencia en diferentes categorías de agility. Evento calificatorio para competencias internacionales.",
+      "requirements": [
+        "Registro FECMEgt vigente",
+        "Certificado de salud del perro",
+        "Inscripción previa",
+        "Equipamiento de seguridad",
+        "Costo de inscripción: $600 MXN"
+      ],
+      "inscriptionInfo": {
+        "deadline": "2025-04-05",
+        "price": 600,
+        "currency": "MXN",
+        "onlineUrl": "#",
+        "contactEmail": "agility@fecmemx.com",
+        "contactPhone": "+52 722 123-4567"
+      },
+      "myths": []
+    },
+    {
+      "slug": "curso-jueces-abril",
+      "title": "Curso de Formación para Aspirantes a Jueces",
+      "type": "Cursos y Congresos",
+      "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80",
+      "startDate": "2025-12-20",
+      "endDate": "2025-12-22",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "location": {
+        "name": "Centro de Capacitación FECMEgt",
+        "address": "Guadalajara, Jalisco, México",
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3836847970845!2d-103.3492606845673!3d20.65973748620158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+      },
+      "organizer": "Federación Canina de México gt. A.C.",
+      "judges": [],
+      "breeds": [],
+      "description": "Curso intensivo de tres días para aspirantes a jueces de exposiciones caninas.",
+      "details": "Programa completo de formación teórica y práctica para obtener la certificación como juez de exposiciones caninas reconocido por FECMEgt, FECAM y WKU.",
+      "requirements": [
+        "Experiencia mínima de 5 años como criador",
+        "Cursar programa completo",
+        "Aprobar exámenes teóricos y prácticos",
+        "Documentación completa",
+        "Costo del curso: $3,500 MXN"
+      ],
+      "inscriptionInfo": {
+        "deadline": "2025-04-15",
+        "price": 3500,
+        "currency": "MXN",
+        "onlineUrl": "#",
+        "contactEmail": "cursos@fecmemx.com",
+        "contactPhone": "+52 33 2267-2400"
+      },
+      "myths": []
+    }
+  ]
+}

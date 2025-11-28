@@ -1,0 +1,333 @@
+{
+  "services": [
+    {
+      "slug": "pedigree",
+      "title": "Pedigree Oficial",
+      "type": "tramite",
+      "shortDescription": "Documentación oficial que respalda la genealogía y pureza de tus ejemplares, otorgando reconocimiento y valor a tu labor como criador.",
+      "mainImage": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=1200&q=80",
+      "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+      "showInServices": true,
+      "showInPricing": true,
+      "pricingCategory": "Certificado",
+      "pricingFeatures": [
+        { "text": "Reconocimiento internacional", "active": true },
+        { "text": "Genealogía completa", "active": true },
+        { "text": "Registro en base de datos", "active": true },
+        { "text": "Certificado digital y físico", "active": true },
+        { "text": "Válido en múltiples países", "active": true },
+        { "text": "Trazabilidad completa", "active": true },
+        { "text": "Actualización de registro", "active": true }
+      ],
+      "description": "El pedigree oficial es el documento que certifica la genealogía completa de tu ejemplar canino o felino. Este documento no solo respalda la pureza y origen de tus animales, sino que también otorga un valor agregado significativo a tu labor como criador responsable. Con nuestro pedigree oficial reconocido internacionalmente por FECAM y WKU, tus ejemplares tendrán un respaldo de calidad mundial.",
+      "featured": {
+        "title": "¿Por qué elegir nuestro Pedigree?",
+        "items": [
+          "Reconocimiento internacional por FECAM y WKU",
+          "Documentación oficial y verificable",
+          "Proceso rápido y eficiente",
+          "Asesoría personalizada durante el trámite",
+          "Validez permanente y transferible"
+        ]
+      },
+      "gallery": [
+        "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+        "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+        "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80"
+      ],
+      "requirements": [
+        "Certificado de nacimiento del ejemplar",
+        "Documentación de los padres con pedigrees válidos",
+        "Registro del criadero o certificación del criador",
+        "Fotografías recientes del ejemplar (frontal y lateral)",
+        "Formulario de solicitud completo y firmado",
+        "Comprobante de pago correspondiente"
+      ],
+      "cost": {
+        "hasCost": true,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "El costo incluye el registro, emisión del documento oficial y envío físico del pedigree."
+      }
+    },
+    {
+      "slug": "cpri",
+      "title": "CPRI - Certificación de Criadero",
+      "type": "tramite",
+      "shortDescription": "Certificación oficial para criaderos que cumplen con los estándares de calidad y bienestar animal establecidos internacionalmente.",
+      "mainImage": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=1200&q=80",
+      "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+      "showInServices": true,
+      "showInPricing": false,
+      "description": "La Certificación de Criadero (CPRI) es el reconocimiento oficial que valida que tu criadero cumple con todos los estándares de calidad, ética y bienestar animal establecidos por la federación y reconocidos internacionalmente. Esta certificación no solo eleva la credibilidad de tu operación, sino que te abre puertas a mercados internacionales y eventos exclusivos.",
+      "featured": {
+        "title": "Beneficios de la certificación CPRI",
+        "items": [
+          "Reconocimiento oficial nacional e internacional",
+          "Acceso a eventos y exposiciones exclusivas",
+          "Prioridad en trámites y servicios",
+          "Descuentos especiales en certificaciones",
+          "Asesoría legal y técnica continua"
+        ]
+      },
+      "gallery": [
+        "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80",
+        "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/11/cuidados-caracteristicas-raza-boxer.jpg?w=800&q=80"
+      ],
+      "requirements": [
+        "Registro de criadero vigente",
+        "Inspección de instalaciones",
+        "Documentación sanitaria de todos los ejemplares",
+        "Plan de crianza y registro genealógico",
+        "Cumplimiento de normativas de bienestar animal",
+        "Referencias de veterinarios y clientes"
+      ],
+      "cost": {
+        "hasCost": false,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "Incluye inspección, certificación inicial y materiales de apoyo."
+      }
+    },
+    {
+      "slug": "cprg",
+      "title": "CPRG - Certificación de Criador",
+      "type": "tramite",
+      "shortDescription": "Reconocimiento oficial para criadores individuales que demuestran compromiso con las mejores prácticas de crianza responsable.",
+      "mainImage": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+      "showInServices": true,
+      "showInPricing": false,
+      "description": "La Certificación de Criador (CPRG) reconoce a profesionales que se comprometen con la crianza responsable, ética y basada en conocimiento científico. Esta certificación valida tu experiencia y conocimiento, proporcionándote credibilidad y acceso a recursos exclusivos de la federación.",
+      "featured": {
+        "title": "Ventajas de ser un criador certificado",
+        "items": [
+          "Credibilidad y reconocimiento profesional",
+          "Acceso a programas de formación continua",
+          "Red de contactos con otros criadores certificados",
+          "Descuentos en servicios y eventos",
+          "Certificado digital para uso en marketing"
+        ]
+      },
+      "gallery": [
+        "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+        "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80"
+      ],
+      "requirements": [
+        "Experiencia mínima de 2 años como criador",
+        "Completar curso de formación aprobado",
+        "Referencias de otros criadores o veterinarios",
+        "Registro de ejemplares criados",
+        "Compromiso escrito con código ético",
+        "Documentación de identificación personal"
+      ],
+      "cost": {
+        "hasCost": false,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "Incluye curso de formación, evaluación y certificación."
+      }
+    },
+    {
+      "slug": "cert-cruza",
+      "title": "Certificado de Cruza",
+      "type": "tramite",
+      "shortDescription": "Documento oficial que certifica el cruce controlado entre ejemplares registrados, garantizando la trazabilidad genética.",
+      "mainImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+      "showInServices": false,
+      "showInPricing": true,
+      "pricingCategory": "Certificado",
+      "pricingFeatures": [
+        { "text": "Trazabilidad genética completa", "active": true },
+        { "text": "Requisito para registro de descendencia", "active": true },
+        { "text": "Control de calidad en la reproducción", "active": true },
+        { "text": "Documentación oficial y verificable", "active": true },
+        { "text": "Base para programas de mejoramiento genético", "active": true }
+      ],
+      "description": "El Certificado de Cruza es un documento oficial que registra y certifica el apareamiento controlado entre ejemplares registrados. Este certificado es esencial para mantener la trazabilidad genética y es requisito indispensable para el registro de la descendencia en el pedigree oficial.",
+      "featured": {
+        "title": "Importancia del certificado de cruza",
+        "items": [
+          "Trazabilidad genética completa",
+          "Requisito para registro de descendencia",
+          "Control de calidad en la reproducción",
+          "Documentación oficial y verificable",
+          "Base para programas de mejoramiento genético"
+        ]
+      },
+      "gallery": [
+        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80"
+      ],
+      "requirements": [
+        "Pedigrees válidos de ambos progenitores",
+        "Certificación de salud reproductiva",
+        "Registro del criadero o criador",
+        "Fecha programada de la cruza",
+        "Formulario de solicitud completo"
+      ],
+      "cost": {
+        "hasCost": false,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "Incluye registro y emisión del certificado oficial."
+      }
+    },
+    {
+      "slug": "cert-inicial",
+      "title": "Certificado Inicial",
+      "type": "tramite",
+      "shortDescription": "Primer paso en el registro oficial de tu ejemplar, estableciendo su identidad y origen dentro del sistema.",
+      "mainImage": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=1200&q=80",
+      "image": "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80",
+      "showInServices": false,
+      "showInPricing": true,
+      "pricingCategory": "Certificado",
+      "pricingFeatures": [
+        { "text": "Establecimiento de identidad oficial", "active": true },
+        { "text": "Base para futuros trámites", "active": true },
+        { "text": "Acceso al sistema de registro completo", "active": true },
+        { "text": "Documentación oficial", "active": true },
+        { "text": "Asignación de número oficial", "active": true }
+      ],
+      "description": "El Certificado Inicial es el documento que establece la identidad oficial de tu ejemplar en el sistema de registro. Es el primer paso para cualquier ejemplar que ingresa al registro oficial, independientemente de si sus padres están registrados o no. Este certificado es la base para futuros trámites y certificaciones.",
+      "featured": {
+        "title": "¿Cuándo necesitas un certificado inicial?",
+        "items": [
+          "Para ejemplares sin pedigrees de los padres",
+          "Primer registro de un ejemplar en el sistema",
+          "Base para futuros trámites y certificaciones",
+          "Establecimiento de identidad oficial",
+          "Acceso al sistema de registro completo"
+        ]
+      },
+      "gallery": [
+        "https://www.tiendanimal.es/articulos/wp-content/uploads/2024/06/caracteristicas-tipos-mastin-tibetano.jpg?w=800&q=80"
+      ],
+      "requirements": [
+        "Fotografías recientes del ejemplar",
+        "Microchip o tatuaje de identificación",
+        "Certificado veterinario de salud",
+        "Datos del propietario y criador",
+        "Formulario de solicitud completo"
+      ],
+      "cost": {
+        "hasCost": false,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "Incluye registro, certificado inicial y asignación de número oficial."
+      }
+    },
+    {
+      "slug": "cursos",
+      "title": "Cursos de Formación",
+      "type": "servicio",
+      "shortDescription": "Programas educativos especializados para criadores que buscan profesionalizar su labor y adquirir conocimientos actualizados.",
+      "mainImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+      "showInServices": true,
+      "showInPricing": false,
+      "description": "Nuestros cursos de formación están diseñados para criadores que buscan profesionalizar su labor y adquirir conocimientos actualizados en genética, salud, bienestar animal, manejo de criaderos y legislación. Ofrecemos programas tanto presenciales como en línea, adaptados a diferentes niveles de experiencia.",
+      "featured": {
+        "title": "Nuestros programas incluyen",
+        "items": [
+          "Genética y mejoramiento genético",
+          "Salud y bienestar animal",
+          "Manejo de criaderos y bioseguridad",
+          "Legislación y normativas",
+          "Certificación oficial al completar"
+        ]
+      },
+      "gallery": [
+        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+        "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80"
+      ],
+      "requirements": [
+        "Ser mayor de edad",
+        "Interés en la crianza responsable",
+        "Disponibilidad para asistir a las sesiones",
+        "Compromiso con la finalización del curso"
+      ],
+      "cost": {
+        "hasCost": false,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "Incluye materiales, certificación y acceso a recursos digitales."
+      }
+    },
+    {
+      "slug": "cert-tutor",
+      "title": "Certificado de Tutor",
+      "type": "tramite",
+      "shortDescription": "Documento oficial que certifica la capacidad y responsabilidad de un tutor para el cuidado y manejo de ejemplares caninos o felinos.",
+      "mainImage": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80",
+      "showInServices": true,
+      "showInPricing": false,
+      "description": "El Certificado de Tutor es un documento oficial que reconoce la capacidad, conocimiento y responsabilidad de una persona para el cuidado, manejo y educación de ejemplares caninos o felinos. Este certificado valida que el tutor cuenta con los conocimientos necesarios sobre bienestar animal, comportamiento, salud y manejo responsable.",
+      "featured": {
+        "title": "Beneficios del certificado de tutor",
+        "items": [
+          "Reconocimiento oficial de competencias",
+          "Credibilidad en el manejo de ejemplares",
+          "Acceso a programas especializados",
+          "Validación de conocimientos y experiencia",
+          "Certificado digital para uso profesional"
+        ]
+      },
+      "gallery": ["https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80"],
+      "requirements": [
+        "Ser mayor de edad",
+        "Completar curso de formación aprobado",
+        "Experiencia documentada en manejo de ejemplares",
+        "Referencias de veterinarios o criadores",
+        "Compromiso escrito con bienestar animal",
+        "Documentación de identificación personal"
+      ],
+      "cost": {
+        "hasCost": false,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "Incluye curso de formación, evaluación y certificación."
+      }
+    },
+    {
+      "slug": "solicitud-cpr",
+      "title": "Solicitud de CPR",
+      "type": "servicio",
+      "shortDescription": "Solicitud para obtener el Certificado de Pureza Racial (CPR) que valida la pureza y calidad genética de tu ejemplar.",
+      "mainImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80",
+      "showInServices": true,
+      "showInPricing": false,
+      "description": "La Solicitud de CPR (Certificado de Pureza Racial) es el proceso mediante el cual puedes solicitar la certificación que valida la pureza y calidad genética de tu ejemplar. Este certificado es esencial para participar en exposiciones, programas de mejoramiento genético y para demostrar la calidad de tu ejemplar.",
+      "featured": {
+        "title": "¿Qué incluye la solicitud de CPR?",
+        "items": [
+          "Evaluación genética del ejemplar",
+          "Verificación de pureza racial",
+          "Documentación oficial del certificado",
+          "Registro en base de datos nacional",
+          "Asesoría durante el proceso"
+        ]
+      },
+      "gallery": ["https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80"],
+      "requirements": [
+        "Pedigree válido del ejemplar",
+        "Fotografías recientes (frontal, lateral y posterior)",
+        "Certificado veterinario de salud",
+        "Microchip o tatuaje de identificación",
+        "Formulario de solicitud completo",
+        "Comprobante de pago correspondiente"
+      ],
+      "cost": {
+        "hasCost": true,
+        "amount": 0,
+        "currency": "MXN",
+        "description": "El costo incluye la evaluación, certificación y emisión del documento oficial."
+      }
+    }
+  ]
+}

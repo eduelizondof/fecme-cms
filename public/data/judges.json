@@ -1,0 +1,149 @@
+{
+  "judges": [
+    {
+      "id": 1,
+      "name": "Dr. Roberto Sánchez",
+      "email": "roberto.sanchez@fecmemx.com",
+      "phone": "+52 33 2267-2400",
+      "city": "Guadalajara, Jalisco",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "licenseType": "CACIB",
+      "categories": ["Todas las Razas"],
+      "breeds": [],
+      "description": "Juez internacional con más de 20 años de experiencia. Certificado para todas las razas."
+    },
+    {
+      "id": 2,
+      "name": "Lic. María González",
+      "email": "maria.gonzalez@fecmemx.com",
+      "phone": "+52 55 1234-5678",
+      "city": "Ciudad de México",
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+      "licenseType": "CACM",
+      "categories": ["Todas las Razas"],
+      "breeds": [],
+      "description": "Juez nacional certificada para todas las razas. Especialista en razas toy y pequeñas."
+    },
+    {
+      "id": 3,
+      "name": "Ing. Carlos Mendoza",
+      "email": "carlos.mendoza@fecmemx.com",
+      "phone": "+52 81 2345-6789",
+      "city": "Monterrey, Nuevo León",
+      "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+      "licenseType": "CACM",
+      "categories": ["Licencia Parcial"],
+      "breeds": ["Chow Chow", "Bulldog", "Beagle"],
+      "description": "Juez con licencia parcial para razas específicas. Experto en razas de trabajo."
+    },
+    {
+      "id": 4,
+      "name": "Dra. Ana Martínez",
+      "email": "ana.martinez@fecmemx.com",
+      "phone": "+52 33 3456-7890",
+      "city": "Guadalajara, Jalisco",
+      "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+      "licenseType": "CACIB",
+      "categories": ["Todas las Razas"],
+      "breeds": [],
+      "description": "Juez internacional reconocida a nivel mundial. Certificada FCI para todas las razas."
+    },
+    {
+      "id": 5,
+      "name": "Lic. Fernando Torres",
+      "email": "fernando.torres@fecmemx.com",
+      "phone": "+52 55 9876-5432",
+      "city": "Ciudad de México",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+      "licenseType": "CACM",
+      "categories": ["Todas las Razas"],
+      "breeds": [],
+      "description": "Juez nacional con amplia experiencia en exposiciones caninas a nivel nacional."
+    },
+    {
+      "id": 6,
+      "name": "Ing. Laura Ramírez",
+      "email": "laura.ramirez@fecmemx.com",
+      "phone": "+52 33 4567-8901",
+      "city": "Guadalajara, Jalisco",
+      "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+      "licenseType": "CACM",
+      "categories": ["Licencia Parcial"],
+      "breeds": ["Pastor Alemán", "Labrador", "Golden Retriever", "Rottweiler"],
+      "description": "Juez especializada en razas de trabajo y pastoreo. Licencia parcial para razas específicas."
+    },
+    {
+      "id": 7,
+      "name": "Dr. Juan García",
+      "email": "juan.garcia@fecmemx.com",
+      "phone": "+52 722 234-5678",
+      "city": "Toluca, Estado de México",
+      "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+      "licenseType": "Agility",
+      "categories": ["Agility Internacional"],
+      "breeds": [],
+      "description": "Juez internacional de Agility certificado por FCI. Especialista en deportes caninos."
+    },
+    {
+      "id": 8,
+      "name": "Lic. Patricia López",
+      "email": "patricia.lopez@fecmemx.com",
+      "phone": "+52 55 3456-7890",
+      "city": "Ciudad de México",
+      "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+      "licenseType": "Agility",
+      "categories": ["Agility Internacional"],
+      "breeds": [],
+      "description": "Juez internacional de Agility con certificación completa. Experta en competencias internacionales."
+    },
+    {
+      "id": 9,
+      "name": "Dr. Miguel Hernández",
+      "email": "miguel.hernandez@fecmemx.com",
+      "phone": "+52 33 5678-9012",
+      "city": "Guadalajara, Jalisco",
+      "photo": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&q=80",
+      "licenseType": "CACM",
+      "categories": ["Licencia Parcial"],
+      "breeds": ["Poodle", "Bichón Frisé", "Maltés", "Shih Tzu", "Yorkshire Terrier"],
+      "description": "Juez especializado en razas toy y de compañía. Licencia parcial para razas pequeñas."
+    },
+    {
+      "id": 10,
+      "name": "Dra. Carmen Silva",
+      "email": "carmen.silva@fecmemx.com",
+      "phone": "+52 81 5678-9012",
+      "city": "Monterrey, Nuevo León",
+      "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=80",
+      "licenseType": "CACIB",
+      "categories": ["Todas las Razas"],
+      "breeds": [],
+      "description": "Juez internacional con certificación FCI. Reconocida por su conocimiento profundo de los estándares."
+    },
+    {
+      "id": 11,
+      "name": "Lic. José Ramírez",
+      "email": "jose.ramirez@fecmemx.com",
+      "phone": "+52 55 6789-0123",
+      "city": "Ciudad de México",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "licenseType": "CACM",
+      "categories": ["Licencia Parcial"],
+      "breeds": ["Doberman", "Boxer", "Weimaraner"],
+      "description": "Juez con licencia parcial especializado en razas de guardia y protección."
+    },
+    {
+      "id": 12,
+      "name": "Ing. Sandra Morales",
+      "email": "sandra.morales@fecmemx.com",
+      "phone": "+52 33 7890-1234",
+      "city": "Guadalajara, Jalisco",
+      "photo": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&q=80",
+      "licenseType": "Agility",
+      "categories": ["Agility Internacional"],
+      "breeds": [],
+      "description": "Juez internacional de Agility. Certificada para competencias nacionales e internacionales."
+    }
+  ]
+}
+

@@ -1,0 +1,192 @@
+{
+  "logo": {
+    "src": "/img/logo-final-gt-transparente.png",
+    "alt": "FECME Logo",
+    "title": "Federación Canina de México",
+    "height": "80px",
+    "width": "80px",
+    "href": "/"
+  },
+  "ctaButton": {
+    "label": "Validar certificado",
+    "href": "/validar-certificado",
+    "enabled": true
+  },
+  "menuItems": [
+    {
+      "label": "Nosotros",
+      "action": {
+        "type": "link",
+        "href": "/about",
+        "target": "_self"
+      },
+      "isDropdown": false,
+      "showOnFooter": true
+    },
+    {
+      "label": "Trámites",
+      "action": {
+        "type": "link",
+        "href": "#",
+        "target": "_self"
+      },
+      "isDropdown": true,
+      "children": [],
+      "showOnFooter": false
+    },
+    {
+      "label": "Servicios",
+      "action": {
+        "type": "link",
+        "href": "#",
+        "target": "_self"
+      },
+      "isDropdown": true,
+      "children": [],
+      "showOnFooter": false
+    },
+    {
+      "label": "Criaderos y Clubs",
+      "action": {
+        "type": "link",
+        "href": "#",
+        "target": "_self"
+      },
+      "isDropdown": true,
+      "children": [
+        {
+          "label": "Criaderos",
+          "action": {
+            "type": "link",
+            "href": "/criaderos",
+            "target": "_self"
+          },
+          "showOnFooter": true
+        },
+        {
+          "label": "Club Filiales",
+          "action": {
+            "type": "link",
+            "href": "/escuelas",
+            "target": "_self"
+          },
+          "showOnFooter": true
+        }
+      ],
+      "showOnFooter": false
+    },
+    {
+      "label": "Exposiciones",
+      "action": {
+        "type": "link",
+        "href": "#",
+        "target": "_self"
+      },
+      "isDropdown": true,
+      "children": [
+        {
+          "label": "Calendario",
+          "action": {
+            "type": "link",
+            "href": "/exposiciones",
+            "target": "_self"
+          },
+          "showOnFooter": true
+        },
+        {
+          "label": "Jueces",
+          "action": {
+            "type": "link",
+            "href": "/jueces",
+            "target": "_self"
+          },
+          "showOnFooter": false
+        }
+      ],
+      "showOnFooter": false
+    },
+    {
+      "label": "Adopta",
+      "action": {
+        "type": "link",
+        "href": "#",
+        "target": "_self"
+      },
+      "isDropdown": true,
+      "children": [
+        {
+          "label": "Documentación",
+          "action": {
+            "type": "file",
+            "href": "/menu/documentacion.pdf",
+            "target": "_blank"
+          },
+          "showOnFooter": false
+        }
+      ],
+      "showOnFooter": false
+    },
+    {
+      "label": "Blog",
+      "action": {
+        "type": "link",
+        "href": "/blog",
+        "target": "_self"
+      },
+      "isDropdown": false,
+      "showOnFooter": true
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com/FECMEgt",
+      "icon": "fa-facebook-square",
+      "showOnFooter": true
+    },
+    {
+      "name": "Twitter",
+      "href": "https://x.com/CaninaMexi22701?t=gOm0x82vQ4TQjsgdxHOjCQ&s=09",
+      "icon": "fa-x-twitter",
+      "showOnFooter": true
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/federacioncaninade?utm_source=qr&igsh=emFiYXY4cGRpdmJ4",
+      "icon": "fa-instagram",
+      "showOnFooter": true
+    },
+    {
+      "name": "WhatsApp",
+      "href": "https://api.whatsapp.com/send?phone=5213343200618&text=Hola",
+      "icon": "fa-whatsapp",
+      "showOnFooter": true
+    }
+  ],
+  "contactInfo": {
+    "email": {
+      "href": "mailto:contacto@fecmemx.com",
+      "text": "contacto@fecmemx.com",
+      "icon": "icon-envelope",
+      "showOnFooter": true
+    },
+    "phone": [
+      {
+        "href": "tel:3322672400",
+        "text": "33-2267-2400",
+        "showOnFooter": true
+      },
+      {
+        "href": "tel:3322672401",
+        "text": "33-2267-2401",
+        "showOnFooter": true
+      }
+    ],
+    "phoneIcon": "icon-phone-call",
+    "whatsapp": {
+      "href": "https://api.whatsapp.com/send?phone=5213343200618&text=Hola",
+      "text": "33-4320-0618",
+      "showOnFooter": true
+    }
+  }
+}
