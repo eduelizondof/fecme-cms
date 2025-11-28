@@ -10,11 +10,26 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
+    SidebarGroup,
+    SidebarGroupLabel,
 } from '@/components/ui/sidebar';
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-vue-next';
+import {
+    BookOpen,
+    Folder,
+    LayoutGrid,
+    FileText,
+    Briefcase,
+    Building2,
+    Award,
+    Calendar,
+    GraduationCap,
+    Users,
+    Settings,
+    Image,
+} from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
 const mainNavItems: NavItem[] = [
@@ -25,15 +40,53 @@ const mainNavItems: NavItem[] = [
     },
 ];
 
-const footerNavItems: NavItem[] = [
+const cmsNavItems: NavItem[] = [
     {
-        title: 'Github Repo',
-        href: 'https://github.com/laravel/vue-starter-kit',
-        icon: Folder,
+        title: 'Blog',
+        href: '/cms/blogs',
+        icon: FileText,
     },
     {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#vue',
+        title: 'Servicios',
+        href: '/cms/services',
+        icon: Briefcase,
+    },
+    {
+        title: 'Criaderos',
+        href: '/cms/breeders',
+        icon: Building2,
+    },
+    {
+        title: 'Certificados',
+        href: '/cms/certificates',
+        icon: Award,
+    },
+    {
+        title: 'Eventos',
+        href: '/cms/events',
+        icon: Calendar,
+    },
+    {
+        title: 'Escuelas',
+        href: '/cms/schools',
+        icon: GraduationCap,
+    },
+    {
+        title: 'Jueces',
+        href: '/cms/judges',
+        icon: Users,
+    },
+    {
+        title: 'Configuración',
+        href: '/cms/settings',
+        icon: Settings,
+    },
+];
+
+const footerNavItems: NavItem[] = [
+    {
+        title: 'Documentación',
+        href: 'https://laravel.com/docs',
         icon: BookOpen,
     },
 ];
@@ -55,6 +108,22 @@ const footerNavItems: NavItem[] = [
 
         <SidebarContent>
             <NavMain :items="mainNavItems" />
+            <SidebarGroup class="px-2 py-0">
+                <SidebarGroupLabel>Módulos</SidebarGroupLabel>
+                <SidebarMenu>
+                    <SidebarMenuItem v-for="item in cmsNavItems" :key="item.title">
+                        <SidebarMenuButton
+                            as-child
+                            :tooltip="item.title"
+                        >
+                            <Link :href="item.href">
+                                <component :is="item.icon" />
+                                <span>{{ item.title }}</span>
+                            </Link>
+                        </SidebarMenuButton>
+                    </SidebarMenuItem>
+                </SidebarMenu>
+            </SidebarGroup>
         </SidebarContent>
 
         <SidebarFooter>
