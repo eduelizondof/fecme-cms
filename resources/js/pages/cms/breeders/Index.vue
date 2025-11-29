@@ -42,11 +42,12 @@ const breadcrumbs = [
                 :data="breeders.data"
                 create-route="/cms/breeders/create"
                 edit-route="/cms/breeders/:id/edit"
+                delete-route="/cms/breeders"
                 create-label="Crear criadero"
                 @delete="openDeleteDialog"
             >
                 <template #cell-is_active="{ value }">
-                    <Badge :variant="value ? 'default' : 'secondary'">
+                    <Badge :class="value ? 'bg-green-500 text-white border-green-600' : 'bg-red-500 text-white border-red-600'">
                         {{ value ? 'Activo' : 'Inactivo' }}
                     </Badge>
                 </template>

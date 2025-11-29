@@ -16,10 +16,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { Head, useForm } from '@inertiajs/vue3';
+import { watch } from 'vue';
 
 const props = defineProps<{ breeder: any }>();
 
@@ -51,6 +51,21 @@ const form = useForm({
     reviews: props.breeder.reviews || [],
     is_active: props.breeder.is_active ?? true,
     sort_order: props.breeder.sort_order || 0,
+});
+
+const generateSlug = (text: string) => {
+    return text
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '');
+};
+
+watch(() => form.name, (newName) => {
+    if (newName) {
+        form.slug = generateSlug(newName);
+    }
 });
 
 const submit = () => {
@@ -231,9 +246,15 @@ const breadcrumbs = [
                                 <CardTitle>Publicación</CardTitle>
                             </CardHeader>
                             <CardContent class="space-y-4">
-                                <div class="flex items-center justify-between">
-                                    <Label>Activo</Label>
-                                    <Switch :checked="form.is_active" @update:checked="form.is_active = $event" />
+                                <div class="flex items-center gap-2">
+                                    <input
+                                        id="is_active"
+                                        type="checkbox"
+                                        :checked="form.is_active"
+                                        @change="form.is_active = ($event.target as HTMLInputElement).checked"
+                                        class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                                    />
+                                    <Label for="is_active">Activo</Label>
                                 </div>
                                 <div class="space-y-2">
                                     <Label for="sort_order">Orden</Label>
