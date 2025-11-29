@@ -2,7 +2,6 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
 import { Plus, Trash2 } from 'lucide-vue-next';
 import { computed } from 'vue';
 
@@ -110,9 +109,11 @@ const moveFeature = (fromIndex: number, toIndex: number) => {
                 </div>
 
                 <div class="flex items-center gap-2">
-                    <Switch
-                        :checked="feature.active"
-                        @update:checked="updateFeature(index, 'active', $event)"
+                    <input 
+                        type="checkbox" 
+                        :checked="feature.active" 
+                        @change="updateFeature(index, 'active', ($event.target as HTMLInputElement).checked)"
+                        class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                     />
                     <span class="text-xs" :class="feature.active ? 'text-green-600' : 'text-red-600'">
                         {{ feature.active ? 'Incluido' : 'No incluido' }}

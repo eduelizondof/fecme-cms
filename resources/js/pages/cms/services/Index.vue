@@ -59,6 +59,7 @@ const breadcrumbs = [
                 :data="services.data"
                 create-route="/cms/services/create"
                 edit-route="/cms/services/:id/edit"
+                delete-route="/cms/services/:id"
                 create-label="Crear servicio"
                 @delete="openDeleteDialog"
             >
@@ -66,7 +67,10 @@ const breadcrumbs = [
                     <Badge variant="outline">{{ value || 'N/A' }}</Badge>
                 </template>
                 <template #cell-is_active="{ value }">
-                    <Badge :variant="value ? 'default' : 'secondary'">
+                    <Badge 
+                        :variant="value ? 'default' : 'secondary'"
+                        :class="value ? 'bg-green-500 text-white hover:bg-green-600' : 'bg-red-500 text-white hover:bg-red-600'"
+                    >
                         {{ value ? 'Activo' : 'Inactivo' }}
                     </Badge>
                 </template>

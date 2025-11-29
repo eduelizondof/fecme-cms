@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
 import { computed } from 'vue';
 
@@ -50,11 +49,18 @@ const updateField = (field: keyof Cost, value: any) => {
                 <Label for="has_cost" class="font-medium">¿Tiene costo?</Label>
                 <p class="text-sm text-muted-foreground">Indica si este servicio/trámite tiene un costo asociado</p>
             </div>
-            <Switch
-                id="has_cost"
-                :checked="cost.hasCost"
-                @update:checked="updateField('hasCost', $event)"
-            />
+            <div class="flex items-center gap-2">
+                <input 
+                    id="has_cost"
+                    type="checkbox" 
+                    :checked="cost.hasCost" 
+                    @change="updateField('hasCost', ($event.target as HTMLInputElement).checked)"
+                    class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                />
+                <span class="text-xs text-muted-foreground">
+                    {{ cost.hasCost ? 'Sí' : 'No' }}
+                </span>
+            </div>
         </div>
 
         <div v-if="cost.hasCost" class="space-y-4 p-4 border rounded-lg">
