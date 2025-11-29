@@ -43,9 +43,12 @@ class BlogController extends Controller
             'content' => 'nullable|array',
             'related_posts' => 'nullable|array',
             'gallery' => 'nullable|array',
-            'is_active' => 'boolean',
+            'is_active' => 'sometimes|boolean',
             'sort_order' => 'nullable|integer',
         ]);
+
+        // Asegurar que is_active sea un booleano
+        $validated['is_active'] = filter_var($request->input('is_active', true), FILTER_VALIDATE_BOOLEAN);
 
         Blog::create($validated);
 
@@ -76,9 +79,14 @@ class BlogController extends Controller
             'content' => 'nullable|array',
             'related_posts' => 'nullable|array',
             'gallery' => 'nullable|array',
-            'is_active' => 'boolean',
+            'is_active' => 'sometimes|boolean',
             'sort_order' => 'nullable|integer',
         ]);
+
+        // Asegurar que is_active sea un booleano
+        if ($request->has('is_active')) {
+            $validated['is_active'] = filter_var($request->input('is_active'), FILTER_VALIDATE_BOOLEAN);
+        }
 
         $blog->update($validated);
 

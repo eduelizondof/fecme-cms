@@ -26,7 +26,7 @@ interface Props {
     };
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 
 const columns = [
     { key: 'title', label: 'Título' },
@@ -48,6 +48,27 @@ const breadcrumbs = [
     { title: 'Dashboard', href: '/dashboard' },
     { title: 'Blog', href: '/cms/blogs' },
 ];
+
+const formatDate = (dateString: string | null | undefined): string => {
+    if (!dateString) {
+        return 'Sin fecha';
+    }
+    
+    const date = new Date(dateString);
+    
+    // Verificar si la fecha es válida y no es 1970 (epoch time)
+    if (isNaN(date.getTime()) || date.getFullYear() === 1970) {
+        return 'Sin fecha';
+    }
+    
+    // Formatear la fecha en formato mexicano
+    return date.toLocaleDateString('es-MX', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        timeZone: 'America/Mexico_City',
+    });
+};
 </script>
 
 <template>
@@ -61,11 +82,18 @@ const breadcrumbs = [
                 :data="blogs.data"
                 create-route="/cms/blogs/create"
                 edit-route="/cms/blogs/:id/edit"
+                delete-route="/cms/blogs/:id"
                 create-label="Crear artículo"
                 @delete="openDeleteDialog"
             >
+                <template #cell-date="{ value }">
+                    {{ formatDate(value) }}
+                </template>
                 <template #cell-is_active="{ value }">
-                    <Badge :variant="value ? 'default' : 'secondary'">
+                    <Badge 
+                        :variant="value ? 'default' : 'secondary'"
+                        :class="value ? 'bg-green-500 text-white hover:bg-green-600' : ''"
+                    >
                         {{ value ? 'Activo' : 'Inactivo' }}
                     </Badge>
                 </template>

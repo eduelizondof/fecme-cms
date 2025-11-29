@@ -12,6 +12,7 @@ import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { Head, useForm } from '@inertiajs/vue3';
+import { ref, watch } from 'vue';
 
 const form = useForm({
     title: '',
@@ -31,7 +32,32 @@ const form = useForm({
     sort_order: 0,
 });
 
+// Rastrear si el slug fue editado manualmente
+const slugManuallyEdited = ref(false);
+
+// Generar slug automáticamente desde el título en tiempo real
+watch(() => form.title, (newTitle) => {
+    if (newTitle && !slugManuallyEdited.value) {
+        form.slug = newTitle
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '');
+    }
+});
+
+// Detectar cuando el usuario edita manualmente el slug
+const onSlugInput = () => {
+    slugManuallyEdited.value = true;
+};
+
 const submit = () => {
+    // Asegurar que los valores se envíen correctamente
+    form.slug = form.slug.trim() || null;
+    form.date = form.date && form.date.trim() ? form.date : null;
+    // is_active ya está en el form, se enviará automáticamente
+    
     form.post('/cms/blogs');
 };
 
@@ -76,8 +102,12 @@ const breadcrumbs = [
                                     <Input
                                         id="slug"
                                         v-model="form.slug"
-                                        placeholder="url-amigable (se genera automáticamente)"
+                                        placeholder="url-amigable (se genera automáticamente desde el título)"
+                                        @input="onSlugInput"
                                     />
+                                    <p class="text-xs text-muted-foreground">
+                                        Se genera automáticamente desde el título mientras escribes
+                                    </p>
                                 </div>
 
                                 <div class="grid gap-4 sm:grid-cols-2">

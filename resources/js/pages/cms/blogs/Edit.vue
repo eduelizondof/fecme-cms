@@ -12,6 +12,7 @@ import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { Head, useForm } from '@inertiajs/vue3';
+import { ref, watch } from 'vue';
 
 interface Blog {
     id: number;
@@ -41,7 +42,7 @@ const form = useForm({
     slug: props.blog.slug || '',
     short_description: props.blog.short_description || '',
     main_image: props.blog.main_image || '',
-    date: props.blog.date?.split('T')[0] || '',
+    date: props.blog.date ? (props.blog.date.split('T')[0] || '') : '',
     author: props.blog.author || '',
     author_url: props.blog.author_url || '',
     tags: props.blog.tags || [],
@@ -50,11 +51,37 @@ const form = useForm({
     content: props.blog.content || [],
     related_posts: props.blog.related_posts || [],
     gallery: props.blog.gallery || [],
-    is_active: props.blog.is_active ?? true,
+    is_active: props.blog.is_active !== undefined ? props.blog.is_active : true,
     sort_order: props.blog.sort_order || 0,
 });
 
+// Rastrear si el slug fue editado manualmente
+const slugManuallyEdited = ref(false);
+const originalSlug = ref(props.blog.slug || '');
+
+// Generar slug automáticamente desde el título en tiempo real
+watch(() => form.title, (newTitle) => {
+    if (newTitle && !slugManuallyEdited.value) {
+        form.slug = newTitle
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '');
+    }
+});
+
+// Detectar cuando el usuario edita manualmente el slug
+const onSlugInput = () => {
+    slugManuallyEdited.value = true;
+};
+
 const submit = () => {
+    // Asegurar que los valores se envíen correctamente
+    form.slug = form.slug.trim() || null;
+    form.date = form.date && form.date.trim() ? form.date : null;
+    // is_active ya está en el form, se enviará automáticamente
+    
     form.put(`/cms/blogs/${props.blog.id}`);
 };
 
@@ -99,8 +126,12 @@ const breadcrumbs = [
                                     <Input
                                         id="slug"
                                         v-model="form.slug"
-                                        placeholder="url-amigable"
+                                        placeholder="url-amigable (se genera automáticamente desde el título)"
+                                        @input="onSlugInput"
                                     />
+                                    <p class="text-xs text-muted-foreground">
+                                        Se regenera automáticamente desde el título mientras escribes
+                                    </p>
                                 </div>
 
                                 <div class="grid gap-4 sm:grid-cols-2">
