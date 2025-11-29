@@ -42,6 +42,7 @@ const breadcrumbs = [
                 :data="judges.data"
                 create-route="/cms/judges/create"
                 edit-route="/cms/judges/:id/edit"
+                delete-route="/cms/judges"
                 create-label="Crear juez"
                 @delete="openDeleteDialog"
             >
@@ -49,7 +50,7 @@ const breadcrumbs = [
                     <Badge variant="outline">{{ value || 'N/A' }}</Badge>
                 </template>
                 <template #cell-is_active="{ value }">
-                    <Badge :variant="value ? 'default' : 'secondary'">
+                    <Badge :class="value ? 'bg-green-500 text-white border-green-600' : 'bg-red-500 text-white border-red-600'">
                         {{ value ? 'Activo' : 'Inactivo' }}
                     </Badge>
                 </template>

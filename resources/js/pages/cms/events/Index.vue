@@ -42,6 +42,7 @@ const breadcrumbs = [
                 :data="events.data"
                 create-route="/cms/events/create"
                 edit-route="/cms/events/:id/edit"
+                delete-route="/cms/events"
                 create-label="Crear evento"
                 @delete="openDeleteDialog"
             >
@@ -49,7 +50,7 @@ const breadcrumbs = [
                     <Badge variant="outline">{{ value || 'N/A' }}</Badge>
                 </template>
                 <template #cell-is_active="{ value }">
-                    <Badge :variant="value ? 'default' : 'secondary'">
+                    <Badge :class="value ? 'bg-green-500 text-white border-green-600' : 'bg-red-500 text-white border-red-600'">
                         {{ value ? 'Activo' : 'Inactivo' }}
                     </Badge>
                 </template>
