@@ -17,8 +17,6 @@ import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/vue3';
 import {
-    BookOpen,
-    Folder,
     LayoutGrid,
     FileText,
     Briefcase,
@@ -28,7 +26,6 @@ import {
     GraduationCap,
     Users,
     Settings,
-    Image,
 } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
@@ -77,7 +74,7 @@ const cmsNavItems: NavItem[] = [
         icon: Users,
     },
     {
-        title: 'Configuración',
+        title: 'Sitio web',
         href: '/cms/settings',
         icon: Settings,
     },
