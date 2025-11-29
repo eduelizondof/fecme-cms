@@ -84,11 +84,7 @@ const cmsNavItems: NavItem[] = [
 ];
 
 const footerNavItems: NavItem[] = [
-    {
-        title: 'Documentación',
-        href: 'https://laravel.com/docs',
-        icon: BookOpen,
-    },
+   
 ];
 </script>
 
