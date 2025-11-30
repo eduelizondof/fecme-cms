@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import JsonEditor from '@/components/cms/JsonEditor.vue';
+import LogoEditor from '@/components/cms/settings/LogoEditor.vue';
+import CtaButtonEditor from '@/components/cms/settings/CtaButtonEditor.vue';
+import MenuItemsEditor from '@/components/cms/settings/MenuItemsEditor.vue';
+import SocialLinksEditor from '@/components/cms/settings/SocialLinksEditor.vue';
+import ContactInfoEditor from '@/components/cms/settings/ContactInfoEditor.vue';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { Head, useForm } from '@inertiajs/vue3';
@@ -12,15 +18,15 @@ const props = defineProps<{
 }>();
 
 const headerForm = useForm({
-    logo: props.headerSettings.logo || null,
-    ctaButton: props.headerSettings.ctaButton || null,
+    logo: props.headerSettings.logo || {},
+    ctaButton: props.headerSettings.ctaButton || { enabled: true, label: '', href: '' },
     menuItems: props.headerSettings.menuItems || [],
     socialLinks: props.headerSettings.socialLinks || [],
-    contactInfo: props.headerSettings.contactInfo || null,
+    contactInfo: props.headerSettings.contactInfo || {},
 });
 
 const footerForm = useForm({
-    logo: props.footerSettings.logo || null,
+    logo: props.footerSettings.logo || {},
     name: props.footerSettings.name || '',
     legend: props.footerSettings.legend || '',
 });
@@ -62,12 +68,10 @@ const breadcrumbs = [
                                 <CardDescription>Configuración del logo del sitio</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="headerForm.logo"
-                                    label=""
-                                    :rows="8"
-                                    placeholder='{ "src": "/img/logo.png", "alt": "Logo", "title": "...", "height": "80px", "width": "80px", "href": "/" }'
-                                />
+                                <LogoEditor v-model="headerForm.logo" />
+                                <p v-if="headerForm.errors.logo" class="mt-2 text-sm text-destructive">
+                                    {{ headerForm.errors.logo }}
+                                </p>
                             </CardContent>
                         </Card>
 
@@ -77,12 +81,10 @@ const breadcrumbs = [
                                 <CardDescription>Configuración del botón de llamada a la acción</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="headerForm.ctaButton"
-                                    label=""
-                                    :rows="6"
-                                    placeholder='{ "label": "Validar certificado", "href": "/validar-certificado", "enabled": true }'
-                                />
+                                <CtaButtonEditor v-model="headerForm.ctaButton" />
+                                <p v-if="headerForm.errors.ctaButton" class="mt-2 text-sm text-destructive">
+                                    {{ headerForm.errors.ctaButton }}
+                                </p>
                             </CardContent>
                         </Card>
 
@@ -92,11 +94,10 @@ const breadcrumbs = [
                                 <CardDescription>Elementos del menú principal</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="headerForm.menuItems"
-                                    label=""
-                                    :rows="20"
-                                />
+                                <MenuItemsEditor v-model="headerForm.menuItems" />
+                                <p v-if="headerForm.errors.menuItems" class="mt-2 text-sm text-destructive">
+                                    {{ headerForm.errors.menuItems }}
+                                </p>
                             </CardContent>
                         </Card>
 
@@ -106,11 +107,10 @@ const breadcrumbs = [
                                 <CardDescription>Enlaces a redes sociales</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="headerForm.socialLinks"
-                                    label=""
-                                    :rows="12"
-                                />
+                                <SocialLinksEditor v-model="headerForm.socialLinks" />
+                                <p v-if="headerForm.errors.socialLinks" class="mt-2 text-sm text-destructive">
+                                    {{ headerForm.errors.socialLinks }}
+                                </p>
                             </CardContent>
                         </Card>
 
@@ -120,11 +120,10 @@ const breadcrumbs = [
                                 <CardDescription>Datos de contacto mostrados en el sitio</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="headerForm.contactInfo"
-                                    label=""
-                                    :rows="15"
-                                />
+                                <ContactInfoEditor v-model="headerForm.contactInfo" />
+                                <p v-if="headerForm.errors.contactInfo" class="mt-2 text-sm text-destructive">
+                                    {{ headerForm.errors.contactInfo }}
+                                </p>
                             </CardContent>
                         </Card>
 
@@ -144,12 +143,10 @@ const breadcrumbs = [
                                 <CardDescription>Configuración del logo en el footer</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <JsonEditor
-                                    v-model="footerForm.logo"
-                                    label=""
-                                    :rows="8"
-                                    placeholder='{ "src": "/img/logo-blanco.png", "alt": "Logo", "title": "...", "width": "150", "height": "150", "href": "/" }'
-                                />
+                                <LogoEditor v-model="footerForm.logo" />
+                                <p v-if="footerForm.errors.logo" class="mt-2 text-sm text-destructive">
+                                    {{ footerForm.errors.logo }}
+                                </p>
                             </CardContent>
                         </Card>
 
@@ -159,18 +156,29 @@ const breadcrumbs = [
                                 <CardDescription>Nombre y leyenda del footer</CardDescription>
                             </CardHeader>
                             <CardContent class="space-y-4">
-                                <JsonEditor
-                                    v-model="footerForm.name"
-                                    label="Nombre de la organización"
-                                    :rows="2"
-                                    placeholder='"Federación Canina de México gt. A.C."'
-                                />
-                                <JsonEditor
-                                    v-model="footerForm.legend"
-                                    label="Leyenda"
-                                    :rows="2"
-                                    placeholder='"Reconocidos mundialmente por la WKU y FECAM"'
-                                />
+                                <div class="space-y-2">
+                                    <Label for="footer-name">Nombre de la organización</Label>
+                                    <Input
+                                        id="footer-name"
+                                        v-model="footerForm.name"
+                                        placeholder="Federación Canina de México gt. A.C."
+                                    />
+                                    <p v-if="footerForm.errors.name" class="text-sm text-destructive">
+                                        {{ footerForm.errors.name }}
+                                    </p>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <Label for="footer-legend">Leyenda</Label>
+                                    <Input
+                                        id="footer-legend"
+                                        v-model="footerForm.legend"
+                                        placeholder="Reconocidos mundialmente por la WKU y FECAM"
+                                    />
+                                    <p v-if="footerForm.errors.legend" class="text-sm text-destructive">
+                                        {{ footerForm.errors.legend }}
+                                    </p>
+                                </div>
                             </CardContent>
                         </Card>
 
@@ -185,4 +193,3 @@ const breadcrumbs = [
         </div>
     </AppLayout>
 </template>
-

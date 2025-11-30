@@ -32,6 +32,14 @@ class SiteSettingController extends Controller
         ]);
 
         foreach ($validated as $key => $value) {
+            // Convertir null a valores por defecto apropiados
+            if ($value === null) {
+                if (in_array($key, ['menuItems', 'socialLinks'])) {
+                    $value = [];
+                } else {
+                    $value = [];
+                }
+            }
             SiteSetting::setByKey($key, $value, 'header');
         }
 
@@ -48,6 +56,14 @@ class SiteSettingController extends Controller
         ]);
 
         foreach ($validated as $key => $value) {
+            // Convertir null a valores por defecto apropiados
+            if ($value === null) {
+                if ($key === 'logo') {
+                    $value = [];
+                } else {
+                    $value = '';
+                }
+            }
             SiteSetting::setByKey($key, $value, 'footer');
         }
 

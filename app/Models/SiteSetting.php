@@ -24,6 +24,12 @@ class SiteSetting extends Model
 
     public static function setByKey(string $key, mixed $value, string $group = 'general'): static
     {
+        // Asegurar que nunca se guarde null, usar valores por defecto
+        if ($value === null) {
+            // Si es string, usar cadena vacía; si no, usar array vacío
+            $value = [];
+        }
+        
         return static::updateOrCreate(
             ['key' => $key],
             ['value' => $value, 'group' => $group]
