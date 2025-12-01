@@ -136,3 +136,4 @@ const updateSire = (index: number, field: keyof Sire, value: any) => {
 </template>
 
 
+
