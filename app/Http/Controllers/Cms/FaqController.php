@@ -36,7 +36,7 @@ class FaqController extends Controller
             'display_order' => 'nullable|integer',
         ]);
 
-        $validated['is_active'] = filter_var($request->input('is_active', false), FILTER_VALIDATE_BOOLEAN);
+        $validated['is_active'] = filter_var($request->input('is_active', true), FILTER_VALIDATE_BOOLEAN);
         $validated['display_order'] = $validated['display_order'] ?? 0;
 
         FaqItem::create($validated);
@@ -61,9 +61,8 @@ class FaqController extends Controller
             'display_order' => 'nullable|integer',
         ]);
 
-        if ($request->has('is_active')) {
-            $validated['is_active'] = filter_var($request->input('is_active'), FILTER_VALIDATE_BOOLEAN);
-        }
+        // Asegurar que is_active sea un booleano, incluso si no viene en el request
+        $validated['is_active'] = filter_var($request->input('is_active', false), FILTER_VALIDATE_BOOLEAN);
 
         $faq->update($validated);
 

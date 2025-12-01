@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { Head, useForm } from '@inertiajs/vue3';
@@ -91,13 +90,14 @@ const breadcrumbs = [
                                 <CardTitle>Configuración</CardTitle>
                             </CardHeader>
                             <CardContent class="space-y-4">
-                                <div class="flex items-center justify-between">
-                                    <Label for="is_active">Activo</Label>
-                                    <Switch
+                                <div class="flex items-center gap-2">
+                                    <input
                                         id="is_active"
-                                        :checked="form.is_active"
-                                        @update:checked="form.is_active = $event"
+                                        v-model="form.is_active"
+                                        type="checkbox"
+                                        class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                                     />
+                                    <Label for="is_active">Activo</Label>
                                 </div>
 
                                 <div class="space-y-2">
