@@ -31,8 +31,8 @@ class SiteSetting extends Model
         }
         
         return static::updateOrCreate(
-            ['key' => $key],
-            ['value' => $value, 'group' => $group]
+            ['key' => $key, 'group' => $group],
+            ['value' => $value]
         );
     }
 
