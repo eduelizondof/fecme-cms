@@ -55,6 +55,20 @@ class PublicApiController extends Controller
     {
         $query = Service::active()->ordered();
 
+        if ($request->has('showInServices')) {
+            $showInServices = filter_var($request->input('showInServices'), FILTER_VALIDATE_BOOLEAN);
+            if ($showInServices) {
+                $query->showInServices();
+            }
+        }
+
+        if ($request->has('showInPricing')) {
+            $showInPricing = filter_var($request->input('showInPricing'), FILTER_VALIDATE_BOOLEAN);
+            if ($showInPricing) {
+                $query->showInPricing();
+            }
+        }
+
         if ($request->has('limit')) {
             $limit = (int) $request->input('limit');
             if ($limit > 0) {
