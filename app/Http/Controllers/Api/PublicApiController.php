@@ -98,7 +98,7 @@ class PublicApiController extends Controller
         }
 
         $breeders = $query->get()
-            ->map(fn (Breeder $breeder) => $breeder->toApiFormat());
+            ->map(fn (Breeder $breeder) => $breeder->toApiListFormat());
 
         return response()->json([
             'breeders' => $breeders,

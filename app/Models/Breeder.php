@@ -105,6 +105,24 @@ class Breeder extends Model
             'reviews' => $this->reviews ?? [],
         ];
     }
+
+    public function toApiListFormat(): array
+    {
+        return [
+            'slug' => $this->slug,
+            'name' => $this->name,
+            'logo' => $this->logo,
+            'featureImage' => $this->feature_image,
+            'breeds' => $this->breeds ?? [],
+            'location' => $this->location,
+            'memberSince' => $this->member_since,
+            'rating' => (float) $this->rating,
+            'totalReviews' => $this->total_reviews,
+            'shortDescription' => $this->short_description,
+            'whatsapp' => $this->whatsapp,
+            'website' => $this->website,
+        ];
+    }
 }
 
 
