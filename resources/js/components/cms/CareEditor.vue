@@ -173,3 +173,4 @@ const updateSection = (index: number, field: keyof CareSection, value: string) =
     </div>
 </template>
 
+

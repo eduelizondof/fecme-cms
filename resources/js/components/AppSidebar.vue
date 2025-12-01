@@ -21,7 +21,6 @@ import {
     FileText,
     Briefcase,
     Building2,
-    Award,
     Calendar,
     GraduationCap,
     Users,
@@ -52,11 +51,6 @@ const cmsNavItems: NavItem[] = [
         title: 'Criaderos',
         href: '/cms/breeders',
         icon: Building2,
-    },
-    {
-        title: 'Certificados',
-        href: '/cms/certificates',
-        icon: Award,
     },
     {
         title: 'Eventos',

@@ -12,18 +12,42 @@ use App\Models\School;
 use App\Models\Service;
 use App\Models\SiteSetting;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class PublicApiController extends Controller
 {
-    public function blogs(): JsonResponse
+    public function blogs(Request $request): JsonResponse
     {
-        $blogs = Blog::active()
-            ->ordered()
-            ->get()
+        $query = Blog::active()->ordered();
+
+        if ($request->has('limit')) {
+            $limit = (int) $request->input('limit');
+            if ($limit > 0) {
+                $query->take($limit);
+            }
+        }
+
+        $blogs = $query->get()
             ->map(fn (Blog $blog) => $blog->toApiFormat());
 
         return response()->json([
             'posts' => $blogs,
+        ]);
+    }
+
+    public function blog(int $id): JsonResponse
+    {
+        $blog = Blog::active()->find($id);
+
+        if (!$blog) {
+            return response()->json([
+                'found' => false,
+                'message' => 'Blog no encontrado',
+            ], 404);
+        }
+
+        return response()->json([
+            'post' => $blog->toApiFormat(),
         ]);
     }
 
@@ -141,4 +165,5 @@ class PublicApiController extends Controller
         ]);
     }
 }
+
 

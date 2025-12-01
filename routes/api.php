@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // Public API endpoints - same structure as JSON files
 Route::prefix('v1')->name('api.v1.')->group(function () {
     Route::get('blogs', [PublicApiController::class, 'blogs'])->name('blogs');
+    Route::get('blogs/{id}', [PublicApiController::class, 'blog'])->name('blog');
     Route::get('services', [PublicApiController::class, 'services'])->name('services');
     Route::get('breeders', [PublicApiController::class, 'breeders'])->name('breeders');
     Route::get('certificates', [PublicApiController::class, 'certificates'])->name('certificates');

@@ -156,3 +156,4 @@ const setRating = (index: number, rating: number) => {
     </div>
 </template>
 
+

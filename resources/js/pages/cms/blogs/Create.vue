@@ -2,7 +2,6 @@
 import ContentEditor from '@/components/cms/ContentEditor.vue';
 import GalleryEditor from '@/components/cms/GalleryEditor.vue';
 import ImagePicker from '@/components/cms/ImagePicker.vue';
-import RelatedPostsEditor from '@/components/cms/RelatedPostsEditor.vue';
 import TagsInput from '@/components/cms/TagsInput.vue';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -163,17 +162,6 @@ const breadcrumbs = [
                             </CardContent>
                         </Card>
 
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>Artículos relacionados</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <RelatedPostsEditor
-                                    v-model="form.related_posts"
-                                    label=""
-                                />
-                            </CardContent>
-                        </Card>
                     </div>
 
                     <div class="space-y-6">

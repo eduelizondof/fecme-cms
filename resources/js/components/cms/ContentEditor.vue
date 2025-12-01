@@ -295,3 +295,4 @@ const getTypeLabel = (type: string) => {
     </div>
 </template>
 
+
