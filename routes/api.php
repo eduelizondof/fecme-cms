@@ -32,5 +32,8 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
     Route::get('judges/{id}', [PublicApiController::class, 'judge'])->name('judge');
     Route::get('header', [PublicApiController::class, 'header'])->name('header');
     Route::get('footer', [PublicApiController::class, 'footer'])->name('footer');
+    Route::get('faqs', [PublicApiController::class, 'faqs'])->name('faqs');
+    Route::get('about', [PublicApiController::class, 'about'])->name('about');
+    Route::get('features-area', [PublicApiController::class, 'featuresArea'])->name('features-area');
 });
 

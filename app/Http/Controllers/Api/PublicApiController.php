@@ -3,14 +3,19 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\AboutContent;
 use App\Models\Blog;
 use App\Models\Breeder;
 use App\Models\Certificate;
+use App\Models\ContactInfo;
 use App\Models\Event;
+use App\Models\FaqItem;
+use App\Models\FeaturesAreaContent;
 use App\Models\Judge;
 use App\Models\School;
 use App\Models\Service;
 use App\Models\SiteSetting;
+use App\Models\WorkingSchedule;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -291,6 +296,68 @@ class PublicApiController extends Controller
             'logo' => $settings['logo'] ?? null,
             'name' => $settings['name'] ?? '',
             'legend' => $settings['legend'] ?? '',
+        ]);
+    }
+
+    public function faqs(Request $request): JsonResponse
+    {
+        $query = FaqItem::active()->ordered();
+
+        if ($request->has('limit')) {
+            $limit = (int) $request->input('limit');
+            if ($limit > 0) {
+                $query->take($limit);
+            }
+        }
+
+        $faqs = $query->get()
+            ->map(fn (FaqItem $faq) => $faq->toApiFormat());
+
+        return response()->json([
+            'success' => true,
+            'data' => [
+                'items' => $faqs,
+            ],
+        ]);
+    }
+
+    public function about(): JsonResponse
+    {
+        $about = AboutContent::with('features')->first();
+
+        if (!$about) {
+            return response()->json([
+                'success' => false,
+                'error' => [
+                    'code' => 'NOT_FOUND',
+                    'message' => 'Contenido About no encontrado',
+                ],
+            ], 404);
+        }
+
+        return response()->json([
+            'success' => true,
+            'data' => $about->toApiFormat(),
+        ]);
+    }
+
+    public function featuresArea(): JsonResponse
+    {
+        $featuresArea = FeaturesAreaContent::with(['schedules', 'contactInfo'])->first();
+
+        if (!$featuresArea) {
+            return response()->json([
+                'success' => false,
+                'error' => [
+                    'code' => 'NOT_FOUND',
+                    'message' => 'Contenido FeaturesArea no encontrado',
+                ],
+            ], 404);
+        }
+
+        return response()->json([
+            'success' => true,
+            'data' => $featuresArea->toApiFormat(),
         ]);
     }
 }
