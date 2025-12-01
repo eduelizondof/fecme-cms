@@ -84,25 +84,27 @@ const getValue = (item: any, key: string) => {
                             </slot>
                         </TableCell>
                         <TableCell>
-                            <div class="flex items-center gap-2">
-                                <Link
-                                    v-if="editRoute"
-                                    :href="editRoute.replace(':id', item.id)"
-                                >
-                                    <Button variant="ghost" size="icon">
-                                        <Edit class="h-4 w-4" />
+                            <slot name="actions" :item="item">
+                                <div class="flex items-center gap-2">
+                                    <Link
+                                        v-if="editRoute"
+                                        :href="editRoute.replace(':id', item.id)"
+                                    >
+                                        <Button variant="ghost" size="icon">
+                                            <Edit class="h-4 w-4" />
+                                        </Button>
+                                    </Link>
+                                    <Button
+                                        v-if="deleteRoute"
+                                        variant="ghost"
+                                        size="icon"
+                                        class="text-destructive hover:text-destructive"
+                                        @click="$emit('delete', item.id)"
+                                    >
+                                        <Trash2 class="h-4 w-4" />
                                     </Button>
-                                </Link>
-                                <Button
-                                    v-if="deleteRoute"
-                                    variant="ghost"
-                                    size="icon"
-                                    class="text-destructive hover:text-destructive"
-                                    @click="$emit('delete', item.id)"
-                                >
-                                    <Trash2 class="h-4 w-4" />
-                                </Button>
-                            </div>
+                                </div>
+                            </slot>
                         </TableCell>
                     </TableRow>
                     <TableRow v-if="data.length === 0">

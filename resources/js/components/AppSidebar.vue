@@ -28,6 +28,7 @@ import {
     HelpCircle,
     Info,
     Star,
+    UserCog,
 } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
@@ -70,6 +71,7 @@ const cmsNavItems: NavItem[] = [
         href: '/cms/judges',
         icon: Users,
     },
+    
     {
         title: 'FAQ',
         href: '/cms/faq',
@@ -89,6 +91,11 @@ const cmsNavItems: NavItem[] = [
         title: 'Sitio web',
         href: '/cms/settings',
         icon: Settings,
+    },
+    {
+        title: 'Usuarios',
+        href: '/cms/users',
+        icon: UserCog,
     },
     
 ];

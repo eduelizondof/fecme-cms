@@ -12,6 +12,7 @@ use App\Http\Controllers\Cms\MediaController;
 use App\Http\Controllers\Cms\SchoolController;
 use App\Http\Controllers\Cms\ServiceController;
 use App\Http\Controllers\Cms\SiteSettingController;
+use App\Http\Controllers\Cms\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['auth', 'verified'])->prefix('cms')->name('cms.')->group(function () {
@@ -35,6 +36,11 @@ Route::middleware(['auth', 'verified'])->prefix('cms')->name('cms.')->group(func
 
     // Judges
     Route::resource('judges', JudgeController::class)->except(['show']);
+
+    // Users
+    Route::resource('users', UserController::class)->except(['show']);
+    Route::post('users/{user}/change-password', [UserController::class, 'changePassword'])->name('users.change-password');
+    Route::patch('users/{user}/toggle-status', [UserController::class, 'toggleStatus'])->name('users.toggle-status');
 
     // Site Settings
     Route::get('settings', [SiteSettingController::class, 'index'])->name('settings.index');
