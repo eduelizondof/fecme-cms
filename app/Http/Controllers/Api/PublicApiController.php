@@ -51,11 +51,18 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function services(): JsonResponse
+    public function services(Request $request): JsonResponse
     {
-        $services = Service::active()
-            ->ordered()
-            ->get()
+        $query = Service::active()->ordered();
+
+        if ($request->has('limit')) {
+            $limit = (int) $request->input('limit');
+            if ($limit > 0) {
+                $query->take($limit);
+            }
+        }
+
+        $services = $query->get()
             ->map(fn (Service $service) => $service->toApiFormat());
 
         return response()->json([
@@ -63,15 +70,54 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function breeders(): JsonResponse
+    public function service(int $id): JsonResponse
     {
-        $breeders = Breeder::active()
-            ->ordered()
-            ->get()
+        $service = Service::active()->find($id);
+
+        if (!$service) {
+            return response()->json([
+                'found' => false,
+                'message' => 'Servicio no encontrado',
+            ], 404);
+        }
+
+        return response()->json([
+            'service' => $service->toApiFormat(),
+        ]);
+    }
+
+    public function breeders(Request $request): JsonResponse
+    {
+        $query = Breeder::active()->ordered();
+
+        if ($request->has('limit')) {
+            $limit = (int) $request->input('limit');
+            if ($limit > 0) {
+                $query->take($limit);
+            }
+        }
+
+        $breeders = $query->get()
             ->map(fn (Breeder $breeder) => $breeder->toApiFormat());
 
         return response()->json([
             'breeders' => $breeders,
+        ]);
+    }
+
+    public function breeder(int $id): JsonResponse
+    {
+        $breeder = Breeder::active()->find($id);
+
+        if (!$breeder) {
+            return response()->json([
+                'found' => false,
+                'message' => 'Criador no encontrado',
+            ], 404);
+        }
+
+        return response()->json([
+            'breeder' => $breeder->toApiFormat(),
         ]);
     }
 
@@ -105,11 +151,18 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function events(): JsonResponse
+    public function events(Request $request): JsonResponse
     {
-        $events = Event::active()
-            ->ordered()
-            ->get()
+        $query = Event::active()->ordered();
+
+        if ($request->has('limit')) {
+            $limit = (int) $request->input('limit');
+            if ($limit > 0) {
+                $query->take($limit);
+            }
+        }
+
+        $events = $query->get()
             ->map(fn (Event $event) => $event->toApiFormat());
 
         return response()->json([
@@ -117,11 +170,34 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function schools(): JsonResponse
+    public function event(int $id): JsonResponse
     {
-        $schools = School::active()
-            ->ordered()
-            ->get()
+        $event = Event::active()->find($id);
+
+        if (!$event) {
+            return response()->json([
+                'found' => false,
+                'message' => 'Evento no encontrado',
+            ], 404);
+        }
+
+        return response()->json([
+            'event' => $event->toApiFormat(),
+        ]);
+    }
+
+    public function schools(Request $request): JsonResponse
+    {
+        $query = School::active()->ordered();
+
+        if ($request->has('limit')) {
+            $limit = (int) $request->input('limit');
+            if ($limit > 0) {
+                $query->take($limit);
+            }
+        }
+
+        $schools = $query->get()
             ->map(fn (School $school) => $school->toApiFormat());
 
         return response()->json([
@@ -129,15 +205,54 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function judges(): JsonResponse
+    public function school(int $id): JsonResponse
     {
-        $judges = Judge::active()
-            ->ordered()
-            ->get()
+        $school = School::active()->find($id);
+
+        if (!$school) {
+            return response()->json([
+                'found' => false,
+                'message' => 'Escuela no encontrada',
+            ], 404);
+        }
+
+        return response()->json([
+            'school' => $school->toApiFormat(),
+        ]);
+    }
+
+    public function judges(Request $request): JsonResponse
+    {
+        $query = Judge::active()->ordered();
+
+        if ($request->has('limit')) {
+            $limit = (int) $request->input('limit');
+            if ($limit > 0) {
+                $query->take($limit);
+            }
+        }
+
+        $judges = $query->get()
             ->map(fn (Judge $judge) => $judge->toApiFormat());
 
         return response()->json([
             'judges' => $judges,
+        ]);
+    }
+
+    public function judge(int $id): JsonResponse
+    {
+        $judge = Judge::active()->find($id);
+
+        if (!$judge) {
+            return response()->json([
+                'found' => false,
+                'message' => 'Juez no encontrado',
+            ], 404);
+        }
+
+        return response()->json([
+            'judge' => $judge->toApiFormat(),
         ]);
     }
 
