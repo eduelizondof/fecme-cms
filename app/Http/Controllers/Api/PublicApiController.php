@@ -35,9 +35,9 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function blog(int $id): JsonResponse
+    public function blog(string $slug): JsonResponse
     {
-        $blog = Blog::active()->find($id);
+        $blog = Blog::active()->where('slug', $slug)->first();
 
         if (!$blog) {
             return response()->json([
@@ -70,9 +70,9 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function service(int $id): JsonResponse
+    public function service(string $slug): JsonResponse
     {
-        $service = Service::active()->find($id);
+        $service = Service::active()->where('slug', $slug)->first();
 
         if (!$service) {
             return response()->json([
@@ -105,9 +105,9 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function breeder(int $id): JsonResponse
+    public function breeder(string $slug): JsonResponse
     {
-        $breeder = Breeder::active()->find($id);
+        $breeder = Breeder::active()->where('slug', $slug)->first();
 
         if (!$breeder) {
             return response()->json([
@@ -170,9 +170,9 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function event(int $id): JsonResponse
+    public function event(string $slug): JsonResponse
     {
-        $event = Event::active()->find($id);
+        $event = Event::active()->where('slug', $slug)->first();
 
         if (!$event) {
             return response()->json([
@@ -205,9 +205,9 @@ class PublicApiController extends Controller
         ]);
     }
 
-    public function school(int $id): JsonResponse
+    public function school(string $slug): JsonResponse
     {
-        $school = School::active()->find($id);
+        $school = School::active()->where('slug', $slug)->first();
 
         if (!$school) {
             return response()->json([
