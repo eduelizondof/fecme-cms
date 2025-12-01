@@ -25,6 +25,9 @@ import {
     GraduationCap,
     Users,
     Settings,
+    HelpCircle,
+    Info,
+    Star,
 } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
@@ -68,10 +71,26 @@ const cmsNavItems: NavItem[] = [
         icon: Users,
     },
     {
+        title: 'FAQ',
+        href: '/cms/faq',
+        icon: HelpCircle,
+    },
+    {
+        title: 'Nosotros',
+        href: '/cms/about',
+        icon: Info,
+    },
+    {
+        title: 'Área de características',
+        href: '/cms/features-area',
+        icon: Star,
+    },
+    {
         title: 'Sitio web',
         href: '/cms/settings',
         icon: Settings,
     },
+    
 ];
 
 const footerNavItems: NavItem[] = [
