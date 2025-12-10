@@ -2,6 +2,7 @@
 import CostEditor from '@/components/cms/CostEditor.vue';
 import DynamicStringList from '@/components/cms/DynamicStringList.vue';
 import FeaturedEditor from '@/components/cms/FeaturedEditor.vue';
+import FormatsEditor from '@/components/cms/FormatsEditor.vue';
 import GalleryEditor from '@/components/cms/GalleryEditor.vue';
 import ImagePicker from '@/components/cms/ImagePicker.vue';
 import PricingFeaturesEditor from '@/components/cms/PricingFeaturesEditor.vue';
@@ -52,6 +53,7 @@ const form = useForm({
     gallery: parseValue(props.service.gallery) || [],
     requirements: parseValue(props.service.requirements) || [],
     cost: parseValue(props.service.cost) || null,
+    formats: parseValue(props.service.formats) || null,
     is_active: toBoolean(props.service.is_active),
     sort_order: props.service.sort_order || 0,
 });
@@ -189,6 +191,18 @@ const breadcrumbs = [
                             <CardContent>
                                 <CostEditor
                                     v-model="form.cost"
+                                    label=""
+                                />
+                            </CardContent>
+                        </Card>
+
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Formatos</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <FormatsEditor
+                                    v-model="form.formats"
                                     label=""
                                 />
                             </CardContent>

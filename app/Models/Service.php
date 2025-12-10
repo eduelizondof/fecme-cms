@@ -23,6 +23,7 @@ class Service extends Model
         'gallery',
         'requirements',
         'cost',
+        'formats',
         'is_active',
         'sort_order',
     ];
@@ -33,6 +34,7 @@ class Service extends Model
         'gallery' => 'array',
         'requirements' => 'array',
         'cost' => 'array',
+        'formats' => 'array',
         'show_in_services' => 'boolean',
         'show_in_pricing' => 'boolean',
         'is_active' => 'boolean',
@@ -87,6 +89,7 @@ class Service extends Model
             'gallery' => $this->gallery ?? [],
             'requirements' => $this->requirements ?? [],
             'cost' => $this->cost,
+            'formats' => $this->formats,
         ];
     }
 }

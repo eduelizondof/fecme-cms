@@ -44,6 +44,7 @@ class ServiceController extends Controller
             'gallery' => 'nullable|array',
             'requirements' => 'nullable|array',
             'cost' => 'nullable|array',
+            'formats' => 'nullable|array',
             'is_active' => 'sometimes|boolean',
             'sort_order' => 'nullable|integer',
         ]);
@@ -85,6 +86,7 @@ class ServiceController extends Controller
             'gallery' => $service->gallery ?? [],
             'requirements' => $service->requirements ?? [],
             'cost' => $service->cost,
+            'formats' => $service->formats,
             'is_active' => (bool) $service->is_active,
             'sort_order' => $service->sort_order,
         ];
@@ -130,6 +132,7 @@ class ServiceController extends Controller
             'gallery' => 'nullable|array',
             'requirements' => 'nullable|array',
             'cost' => 'nullable|array',
+            'formats' => 'nullable|array',
             'is_active' => 'sometimes|boolean',
             'sort_order' => 'nullable|integer',
         ]);
